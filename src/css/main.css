@@ -6,8 +6,9 @@ Main style file
 
 @import "../../node_modules/normalize.css/normalize.css";
 
-
+@import "./components/fonts.css";
 
 /* Put you custom styles below */
 
 @import "./components/_general.pcss";
+@import "./components/_reuse-elements.pcss";
