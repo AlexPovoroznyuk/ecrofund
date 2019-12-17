@@ -11,3 +11,6 @@ Main style file
 /* Put you custom styles below */
 
 @import "./components/_general.pcss";
+@import "./components/_reuse-elements.pcss";
+@import "./components/_header.pcss";
+@import "./components/_footer.pcss";
