@@ -14,5 +14,6 @@ Main style file
 @import "./components/_reuse-elements.pcss";
 @import "./components/_caption.pcss";
 @import "./components/_news.pcss";
+@import "./components/_subscribe.pcss";
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
