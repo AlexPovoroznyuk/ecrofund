@@ -1,10 +1,73 @@
 <div class="news-container">
     <div class="container">
         <div class="row news-info">
-            <div class="col-6">asd</div>
-            <div class="col-6">sad</div>
+            <div class="half-col">
+                <img scr="" alt="img" />
+            </div>
+            <div class="half-col">
+                <div class="caption">
+                    <p class="caption-text">ECRO-launched China Clean Energy Fund invests in three wind farms</p>
+                </div>
+                <div class="description">
+                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <span>Read More ></span>
+                    </p>
+                    
+                </div>
+            </div>
         </div>
-        <div class="news-list"></div>
+        <div class="news-list flex row">
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "half-col",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "half-col",
+                "caption": "Заголовок новости", 
+                "description": "Шпилим с другом мы в приставку и копана, кто победил, та вот ты тут так сразу не… поймешь"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "half-col",
+                "caption": "Китайцы снова придумали USB", 
+                "description": "О что же это творится ЮСБИ было а теперь вот ОСББ, что с этим делать? Все знают что этот дивайс вошел плотно в жизни пользователей"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "half-col",
+                "caption": "Вдруг появились камень", 
+                "description": "Камень в пространстве, что думают философы? Зачем камень дома и как с ним… жить"
+            })
+        </div>
+        <div class="news-list flex row">
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "quarter-col",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "quarter-col",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "quarter-col",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+            })
+            @@include('./_news-item.html', {
+                "img": "",
+                "col": "quarter-col",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+            })
+        </div>
         <div class="subscribe"></div>
     </div>
 </div>
