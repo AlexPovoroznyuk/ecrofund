@@ -5,5 +5,36 @@
     }
     .news-list{
         flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .news-item{
+        max-width: 540px;
+    }
+    
+    .image-container{
+        position: relative;
+        height: 326px;
+        overflow: hidden;
+        .wrap{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -50%;
+            right: -50%;
+            height: 100%;
+            width: 200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: auto;
+            margin: auto;
+            display: block;
+            height: 100%;
+        }
+    }
+    .height{
+        height: 238px;  
     }
 }
