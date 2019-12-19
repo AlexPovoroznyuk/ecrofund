@@ -1,12 +1,26 @@
 <div class="news-item @@col">
-    <div class="image-container @@height" style="background-image: url(@@img)">
+    <div class="wrapper">
+        <a href="#" class="hidden-lnk"></a>
+        <div class="image-container @@height">
+            <div class="image-container-inner" style="background-image: url(@@img)"></div>
+        </div>
+        <div class="content-wr">
+            <div class="item-caption">
+            <p class="font-18b line-1-27">@@caption</p>
+        </div>
+        <div class="item-description">
+            <p class="font-13r">@@description</p>
+        </div>
+        <div class="info-wr flex">
+            @@include('./_news-info.html', {
+            "day": "@@day",
+            "time": "@@time",
+            "see": "@@see"
+
+            })
+        </div>
+        </div>
         
     </div>
-    
-    <div class="item-caption">
-        <p class="font-18b">@@caption</p>
-    </div>
-    <div class="item-description">
-        <p class="font-13r">@@description</p>
-    </div>
+
 </div>

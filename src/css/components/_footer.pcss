@@ -4,28 +4,53 @@
         margin-top: auto;
         color: #9BA6B2;
         position: relative;
-        bottom: -1.5em;
+        bottom: -1.7em;
     }
     
     .lnk-group{
         p{
             text-transform: uppercase;
+            margin-bottom: calc(.7em / .75);
         }
+        a {
+            line-height: 1.37;
+            display: block;
+            margin-bottom: .25em;
+        }
+    }
+    .links-wrapper{
+        width: 100%;
+    max-width: 44.6em;
+    align-items: flex-start;
     }
 }
 footer{
     background: #F8F8F8;
-    padding: 3.5em 0;
+    padding: 3.65em 0 3.55em;
     .social{
         max-width: 20em;
-        margin-bottom: 2.5em;
+        margin-bottom: 3.1em;
     }
+    
     .social-links{
         display: flex;
-        width: 10.6em;
+        width: 11.6em;
         justify-content: space-between;
-        img{
+        a{
             display: block;
+            &:hover{
+                path{
+                fill: #0024DE;
+                }
+            }
+        }
+        svg{
+            display: block;
+            width: 1.3em;
+            path{
+                fill: #444444;
+                transition: .3s;
+            }
         }
     }
 }

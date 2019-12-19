@@ -1,6 +1,15 @@
+.line-1-43{
+  line-height: 1.43;
+}
+.line-1-37{
+  line-height: 1.37;
+}
+.line-1-27{
+  line-height: 1.27;
+}
 .font-18b{
     font-size: 0.9em;
-    margin: 0;
+    font-weight: 600;
 }
 .font-18r{
     font-weight: 400;
@@ -8,7 +17,7 @@
 }
 .font-15b {
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 .font-15r {
   font-weight: 400;
@@ -17,6 +26,10 @@
 .font-13r {
   font-weight: 400;
   font-size: 0.65em;
+}
+.font-12r{
+  font-weight: 400;
+  font-size: 0.6em;
 }
 .font-11r {
   font-weight: 400;
@@ -62,9 +75,74 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .3s;
+  &:hover{
+    background: #0024de;
+  }
   span {
     color: #ffffff;
     text-transform: uppercase;
     display: block;
   }
+}
+
+.blue{
+  color: #0024DE;
+}
+
+.grey{
+  color: #9BA6B2;
+}
+
+.grey-lnk-style{
+  color: #221E1E;
+  transition: .3s;
+  path, rect{
+    fill: #221E1E;
+  }
+  circle{
+    stroke: #221E1E;
+  }
+  &:hover{
+    color: #0024DE;
+    path, rect{
+      fill: #0024DE;
+    }
+    circle{
+      stroke: #0024DE;
+    }
+  }
+}
+
+.blue-lnk-style{
+  color: #0024DE;
+  
+  transition: .3s;
+  path, rect{
+    fill: #0024DE;
+    
+  }
+  circle{
+    stroke: #0024DE;
+    
+  }
+  &:hover{
+    color: #221E1E;
+    path, rect{
+      fill: #221E1E;
+    }
+    circle{
+      stroke: #221E1E;
+    }
+  }
+}
+
+.hidden-lnk{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
 }

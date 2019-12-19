@@ -1,19 +1,37 @@
 <div class="news-container">
     <div class="container">
-        <div class="row news-info">
-            <div class="half-col">
+        <div class="row news-info flex">
+            <div class="half-col img-col">
                 <img src="img/pics/news_1.png" alt="img" />
             </div>
-            <div class="half-col">
+            <div class="half-col txt-col">
                 <div class="caption">
-                    <p class="font-18b">ECRO-launched China Clean Energy Fund invests in three wind farms</p>
+                    <p class="font-18b">ECRO-launched China Clean Energy Fund invests in <br>three wind farms</p>
                 </div>
                 <div class="description">
-                    <p class="font-13r">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <span>Read More ></span>
+                    <p class="font-13r grey line-1-43">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <a href="#" class="blue-lnk-style descr-lnk flex">Read More 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7.071" height="11.314" viewBox="0 0 7.071 11.314">
+                                
+                                <rect class="a" width="2" height="8" transform="translate(1.414 11.314) rotate(-135)" />
+                                <rect class="a" width="2" height="8" transform="translate(0 1.414) rotate(-45)" />
+                            </svg>
+                        </a>
                     </p>
                     
                 </div>
+                <div class="info-wr flex">
+                   @@include('./_news-info.html', {
+                        "day": "Вчера",
+                        "time": "20:47",
+                        "see": "3854"
+                        
+                        
+                    }) 
+                    @@include('./_social.html')
+                    
+                </div>
+                
             </div>
         </div>
         <div class="news-list flex row">
@@ -22,60 +40,125 @@
                 "col": "half-col",
                 "height": "",
                 "caption": "Вдруг появились линии", 
-                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "Сегодня",
+                "time": "20:47",
+                "see": "3854"
+                
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_2.png",
                 "col": "half-col",
                 "height": "",
                 "caption": "Заголовок новости", 
-                "description": "Шпилим с другом мы в приставку и копана, кто победил, та вот ты тут так сразу не… поймешь"
+                "description": "Шпилим с другом мы в приставку и копана, кто победил, та вот ты тут так сразу не… поймешь",
+                "day": "Вчера",
+                "time": "20:47",
+                "see": "3854"
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_3.png",
                 "col": "half-col",
                 "height": "",
                 "caption": "Китайцы снова придумали USB", 
-                "description": "О что же это творится ЮСБИ было а теперь вот ОСББ, что с этим делать? Все знают что этот дивайс вошел плотно в жизни пользователей"
+                "description": "О что же это творится ЮСБИ было а теперь вот ОСББ, что с этим делать? Все знают что этот дивайс вошел плотно в жизни пользователей",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_4.png",
                 "col": "half-col",
                 "height": "",
                 "caption": "Вдруг появились камень", 
-                "description": "Камень в пространстве, что думают философы? Зачем камень дома и как с ним… жить"
+                "description": "Камень в пространстве, что думают философы? Зачем камень дома и как с ним… жить",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
+            })
+            @@include('./_news-item.html', {
+                "img": "img/pics/news_1.png",
+                "col": "half-col",
+                "height": "",
+                "caption": "Вдруг появились линии", 
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "Сегодня",
+                "time": "20:47",
+                "see": "3854"
+                
+            })
+            @@include('./_news-item.html', {
+                "img": "./img/pics/news_2.png",
+                "col": "half-col",
+                "height": "",
+                "caption": "Заголовок новости", 
+                "description": "Шпилим с другом мы в приставку и копана, кто победил, та вот ты тут так сразу не… поймешь",
+                "day": "Вчера",
+                "time": "20:47",
+                "see": "3854"
+            })
+            @@include('./_news-item.html', {
+                "img": "./img/pics/news_3.png",
+                "col": "half-col",
+                "height": "",
+                "caption": "Китайцы снова придумали USB", 
+                "description": "О что же это творится ЮСБИ было а теперь вот ОСББ, что с этим делать? Все знают что этот дивайс вошел плотно в жизни пользователей",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
+            })
+            @@include('./_news-item.html', {
+                "img": "./img/pics/news_4.png",
+                "col": "half-col",
+                "height": "",
+                "caption": "Вдруг появились камень", 
+                "description": "Камень в пространстве, что думают философы? Зачем камень дома и как с ним… жить",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
             })
         </div>
-        <div class="news-list flex row">
+        <div class="news-list news-list-quarter flex row">
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_1.png",
                 "col": "quarter-col",
                 "height": "height",
                 "caption": "Вдруг появились линии", 
-                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "Сегодня",
+                "time": "20:47",
+                "see": "3854"
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_2.png",
                 "col": "quarter-col",
                 "height": "height",
                 "caption": "Вдруг появились линии", 
-                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "Вчера",
+                "time": "20:47",
+                "see": "3854"
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_3.png",
                 "col": "quarter-col",
                 "height": "height",
                 "caption": "Вдруг появились линии", 
-                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
             })
             @@include('./_news-item.html', {
                 "img": "./img/pics/news_4.png",
                 "height": "height",
                 "col": "quarter-col",
                 "caption": "Вдруг появились линии", 
-                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!"
+                "description": "Появились линии в разные стороны и они цвета желто оранжевого. ОГО!",
+                "day": "19/09/19",
+                "time": "20:47",
+                "see": "3854"
             })
         </div>
-        <div class="subscribe"></div>
     </div>
 </div>
