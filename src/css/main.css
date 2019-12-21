@@ -17,3 +17,7 @@ Main style file
 @import "./components/_subscribe.pcss";
 @import "./components/_header.pcss";
 @import "./components/_footer.pcss";
+@import "./components/_news-item.pcss";
+@import "./components/_news-info.pcss";
+@import "./components/_social.pcss";
+@import "./components/_news-final.pcss";

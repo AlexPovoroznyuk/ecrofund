@@ -1,6 +1,7 @@
 *{
     box-sizing:border-box;
     margin: 0;
+    font-family: 'HelveticaNeue';
 }
 a{
     text-decoration: none;
@@ -14,6 +15,12 @@ button{
     background: transparent;
     outline: none;
     border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    line-height: .8;
 }
 input{
     outline: none;
@@ -25,6 +32,12 @@ body{
     font-size: calc(.6rem + .586vw);
     line-height: 1.15;
     color: #221E1E;
+    @media(max-width: 1200px){
+        font-size: calc(.7rem + .586vw);
+    }
+    @media(max-width: 800px){
+        font-size: calc(.8rem + .586vw);
+    }
 }
 img{
     width: 100%;

@@ -1,44 +1,75 @@
 .news-container{
-    .news-info{
-        display: flex;
+    padding-top: 1.35em;
+    padding-bottom: 3.3em;
+    .news-list-quarter{
+        margin: 0 -5px;
+        .wrapper{
+            height: 17.3em;
+        }
+        .news-item{
+            padding: 0 5px;
+        }
+        .image-container{
+            margin-bottom: 1.2em;
+        }
+    }
+    .descr-lnk{
+        display: inline-flex;
+        svg{
+            margin-top: 1px;
+            margin-left: .2em;
+        }
+    }
+    .info-wr{
+        margin-top: auto;
+        align-items: flex-end;
+    }
+    .news-info-container{
+        min-width: 7.5em;
+    }
+    .img-col{
+        max-width: calc(29.75em + 30px);
         width: 100%;
+    }
+    .txt-col{
+        max-width: calc(27.1em + 30px); 
+        width: 100%;
+        flex-direction: column;
+    display: flex;
+    }
+    .half-col{
+
+        .caption{
+            margin-bottom: 2em;
+        }
+    }
+    .news-info{
+        align-items: stretch;
+        margin-bottom: 2.95em;
+        @media(max-width: 920px){
+            flex-wrap: wrap;
+            .img-col{
+                max-width: none;
+            }
+            .txt-col{
+                max-width: none;
+            }
+        }
     }
     .news-list{
         flex-wrap: wrap;
         align-items: stretch;
     }
     .news-item{
-        max-width: 27em;
+        max-width: calc(27em + 30px);
+    }
+    @media(max-width: 1200px){
+        .news-item{
+            .image-container{
+                height: calc(32vw - 60px);
+            } 
+        }
     }
     
-    .image-container{
-        position: relative;
-        height: 16.3em;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50%;
-        /* .wrap{
-            position: absolute;
-            top: -50%;
-            bottom: -50%;
-            left: -50%;
-            right: -50%;
-            height: 200%;
-            width: 200%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
-            width: auto;
-            min-width: 50%;
-            margin: auto;
-            display: block;
-            min-height: 50%;
-        } */
-    }
-    .height{
-        height: 11.9em;  
-    }
+    
 }

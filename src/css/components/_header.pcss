@@ -1,4 +1,22 @@
 header{
+    .drop-trigger{
+        svg{
+            margin-left: 0.5em;
+            display: block;
+        }
+    }
+    .lang-trigger{
+        svg{
+            margin-left: .2em;
+        }
+    }
+    .search-trigger{
+        svg{
+            margin-left: .5em;
+        height: .6em;
+        width: auto;
+        }
+    }
     .header-wr{
         display: flex;
         justify-content: space-between;
@@ -13,6 +31,7 @@ header{
         .logo{
             margin-right: 2em;
             width: 8em;
+            margin-left: -1px;
             a{
                 display: block;
             }
@@ -23,7 +42,7 @@ header{
             }
     .right-part{
         display: flex;
-        width: 19.5em;
+        width: 19.75em;
     }
         .links-wr{
             display: flex;
@@ -34,10 +53,10 @@ header{
             .link-item{
                 a{
                     display: block;
-                    font-size: .65em;
-                    line-height: 1.15;
+                    /* font-size: .65em;
+                    line-height: 1.15; */
                     text-decoration: none;
-color: #221E1E;
+/* color: #221E1E; */
                 }
             }
         .login-wr{
@@ -45,14 +64,11 @@ color: #221E1E;
             display: flex;
             align-items: center;
             a{
-                font-size: .65em;
-                line-height: 1.15;
-                text-decoration: none;
-                color: #221E1E;
-                margin-right: .5em;
+                margin-right: .8em;
             }
             .pics-wr{
                 width: 1.4em;
+                margin-right: .2em;
                 img{
                     max-width: 100%;
                     display: block;
