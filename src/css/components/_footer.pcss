@@ -1,13 +1,29 @@
 .footer{
     align-items: flex-start;
+    @media(max-width: 600px){
+        flex-wrap: wrap;
+    }
     .copy{
         margin-top: auto;
         color: #9BA6B2;
         position: relative;
         bottom: -1.7em;
+        @media(max-width: 600px){
+            width: 100%;
+            p{
+                text-align: right;
+            }
+        }
     }
     
     .lnk-group{
+        @media(max-width: 450px){
+            width: 50%;
+            margin-bottom: 1.5em;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         p{
             text-transform: uppercase;
             margin-bottom: calc(.7em / .75);
@@ -20,8 +36,12 @@
     }
     .links-wrapper{
         width: 100%;
-    max-width: 44.6em;
-    align-items: flex-start;
+        max-width: 44.6em;
+        align-items: flex-start;
+        @media(max-width: 450px){
+            flex-wrap: wrap;
+        }
+        
     }
 }
 footer{
@@ -30,6 +50,15 @@ footer{
     .social{
         max-width: 20em;
         margin-bottom: 3.1em;
+        @media(max-width: 400px){
+            flex-wrap: wrap;
+        }
+        .for-adaptive{
+            @media(max-width: 400px){
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
     }
     
     .social-links{

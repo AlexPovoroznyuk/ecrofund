@@ -46,7 +46,15 @@
     .news-info{
         align-items: stretch;
         margin-bottom: 2.95em;
-
+        @media(max-width: 920px){
+            flex-wrap: wrap;
+            .img-col{
+                max-width: none;
+            }
+            .txt-col{
+                max-width: none;
+            }
+        }
     }
     .news-list{
         flex-wrap: wrap;
@@ -55,7 +63,13 @@
     .news-item{
         max-width: calc(27em + 30px);
     }
-    
+    @media(max-width: 1200px){
+        .news-item{
+            .image-container{
+                height: calc(32vw - 60px);
+            } 
+        }
+    }
     
     
 }
