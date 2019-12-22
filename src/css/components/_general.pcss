@@ -21,6 +21,7 @@ button{
     margin: 0;
     cursor: pointer;
     line-height: .8;
+    font: unset;
 }
 input{
     outline: none;
@@ -32,6 +33,13 @@ body{
     font-size: calc(.6rem + .586vw);
     line-height: 1.15;
     color: #221E1E;
+    &.modal-open{
+        overflow: hidden;
+        .overlay{
+            opacity: 10;
+            pointer-events: auto;
+          }
+    }
     @media(max-width: 1200px){
         font-size: calc(.7rem + .586vw);
     }

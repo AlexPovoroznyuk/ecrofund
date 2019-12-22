@@ -16,24 +16,20 @@
         display: flex;
         flex-direction: column;
     }
-    
     .image-container{
         position: relative;
-        height: 16.3em;
         overflow: hidden;
-        
         margin-bottom: 1.4em;
-        
     }
     .height{
-        height: 11.9em;  
+        .image-container-inner{
+            @media(min-width: 993px){
+            padding-top: 82%;
+            }
+        } 
     }
       .image-container-inner{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        padding-top: 60.36%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;

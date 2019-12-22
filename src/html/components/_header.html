@@ -1,13 +1,32 @@
 <header>
     <div class="header-wr container">
+        <div class="search-container">
+            <div class="input-group">
+               <form action="#" class="search-input font-15r">
+                <input type="text" placeholder="Поиск на EcroFund" name="search">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11.975" height="12.475" viewBox="0 0 11.975 12.475">
+                        <g transform="translate(-1077 -22)">
+                            <g transform="translate(1077 22)" fill="none" stroke="#221e1e" stroke-width="1">
+                                <circle cx="5" cy="5" r="4.5" fill="none"></circle>
+                            </g>
+                            <rect width="1" height="5" transform="translate(1084.732 30.939) rotate(-45)" fill="#221e1e"></rect>
+                        </g>
+                    </svg>
+                </button>
+            </form> 
+           
+            </div>
+           <button class="cancel-btn search-cancel font-15r grey-lnk-style"><span>Отмена</span></button> 
+        </div>
         <div class="left-part">
             <div class="logo">
                 <a>
                     <img src="img/pics/eps.svg" alt="logo">
                 </a>
             </div>
-            <div class="links-wr">
-                <div class="link-item">
+            <div class="links-wr mobile-hide">
+                <div class="link-item dropdown-group">
                     <button class="drop-trigger grey-lnk-style">
                         <span class="font-13r">Больше о вселенной Экро</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.899" height="5.657" viewBox="0 0 9.899 5.657">
@@ -18,18 +37,37 @@
                             </g>
                         </svg>
                     </button>
+                    <div class="hover-container">
+                        <div class="drop-container">
+                            <ul class="drop-list list-default">
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Больше о вселенной Экро</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Больше о вселенной Экро</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Больше о вселенной Экро</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Больше о вселенной Экро</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="link-item">
                     <a href="#" class="font-13r grey-lnk-style">Помощь</a>
                 </div>
                 <div class="link-item">
-                    <a href="#" class="font-13r grey-lnk-style">Новости</a>
+                    <a href="/news.html" class="font-13r grey-lnk-style">Новости</a>
                 </div>
             </div>
         </div>
         <div class="right-part">
             <div class="links-wr">
-                <div class="link-item">
+                <div class="link-item dropdown-group mobile-hide">
                     <button class="drop-trigger grey-lnk-style">
                         <span class="font-13r">Экро система</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.899" height="5.657" viewBox="0 0 9.899 5.657">
@@ -40,15 +78,33 @@
                             </g>
                         </svg>
                     </button>
+                    <div class="hover-container">
+                        <div class="drop-container">
+                            <ul class="drop-list list-default">
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Экро система</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Экро система</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Экро система</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Экро система</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="link-item">
-                    <button class="drop-trigger search-trigger grey-lnk-style">
+                    <button class="search-trigger grey-lnk-style">
                         <span class="font-13r">Поиск</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11.975" height="12.475"
                             viewBox="0 0 11.975 12.475">
                             <g transform="translate(-1077 -22)">
                                 <g transform="translate(1077 22)" fill="none" stroke="#221e1e" stroke-width="1">
-                                    
+
                                     <circle cx="5" cy="5" r="4.5" fill="none" />
                                 </g>
                                 <rect width="1" height="5" transform="translate(1084.732 30.939) rotate(-45)"
@@ -56,8 +112,9 @@
                             </g>
                         </svg>
                     </button>
+                    
                 </div>
-                <div class="link-item">
+                <div class="link-item dropdown-group mobile-hide">
                     <button class="drop-trigger grey-lnk-style lang-trigger">
                         <span class="font-13r">Рус</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.899" height="5.657" viewBox="0 0 9.899 5.657">
@@ -68,6 +125,24 @@
                             </g>
                         </svg>
                     </button>
+                    <div class="hover-container">
+                        <div class="drop-container">
+                            <ul class="drop-list list-default">
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Рус</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Eng</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Esp</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="font-13r">Tur</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="login-wr">
@@ -75,6 +150,11 @@
                 <div class="pics-wr">
                     <img src="img/pics/user.svg" alt="">
                 </div>
+            </div>
+            <div class="burger-wr destop-hide">
+                <button class="burger">
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
