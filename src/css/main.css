@@ -21,3 +21,4 @@ Main style file
 @import "./components/_news-info.pcss";
 @import "./components/_social.pcss";
 @import "./components/_news-final.pcss";
+@import "./components/_events.pcss";
