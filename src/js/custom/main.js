@@ -42,3 +42,16 @@ $(function($){
         }
     });
 });
+
+
+
+
+$(".burger").click(function(){
+    $(".mobile-navigation").addClass("active");
+    $("body").addClass("nav-open");
+})
+
+$(".nav-close").click(function(){
+    $(".mobile-navigation").removeClass("active");
+    $("body").removeClass("nav-open");
+})

@@ -40,6 +40,10 @@ body{
             pointer-events: auto;
           }
     }
+    &.nav-open{
+        overflow: hidden;
+        
+    }
     @media(max-width: 1200px){
         font-size: calc(.7rem + .586vw);
     }
@@ -49,4 +53,10 @@ body{
 }
 img{
     width: 100%;
+}
+a {
+    cursor: default;
+    &[href]{
+        cursor: pointer;
+    }
 }

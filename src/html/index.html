@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
-    @@include('./components/_head.html')
+    @@include('./components/_head.html',{
+        "headTitle" : "EcroSystem Home",
+        "headDescription" : "EcroSystem Home"
+    })
     <body>
-        @@include('./components/_header.html')
+        @@include('./components/_header.html', {
+            "homelink" : ""
+        })
         @@include('./components/_footer.html')
     </body>
 </html>
