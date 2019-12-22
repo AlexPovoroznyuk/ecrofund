@@ -13,6 +13,9 @@
                 max-width: none;
             }
         }
+        @media(max-width: 992px){
+            flex-wrap: wrap;
+        }
     }
     .caption{
         margin-bottom: .4em;
@@ -21,6 +24,9 @@
     .description{
         margin-bottom: 1.85em;
         padding-right: 2em;
+        @media(max-width: 450px){
+            padding-right: 0;
+        }
     }
     .info-wr{
         margin-top: auto;
@@ -28,15 +34,26 @@
     }
     .img-col{
         width: 46.7%;
+        @media(max-width: 992px){
+            width: 100%;
+            margin-bottom: 1em;
+        }
     }
     .txt-col{
         width: 53.3%;
         flex-direction: column;
         display: flex;
         padding-left: 2.3em;
+        @media(max-width: 992px){
+            width: 100%;
+            padding-left: 15px;
+        }
     }
     .link-wrap{
         text-transform: uppercase;
+        @media(max-width: 992px){
+            margin-bottom: 1em;
+        }
     }
     .descr-lnk{
         display: inline-flex;
