@@ -1,5 +1,13 @@
 .caption-container{
     background: #F4F8FC;
+    .news-search{
+        
+        transition: .5s .5s;
+        &.hide{
+            opacity: 0;
+            transition: .5s;
+        }
+    }
     .caption-wrap{
         /* align-items: flex-end; */
         padding-top: 1em;
@@ -10,4 +18,71 @@
             font-size: 1em;
         }
     }
+    .rightPart{
+        position: relative;
+        
+    }
+    .news-search-container{
+        position: absolute;
+        right: 0;
+        top: -.5em;
+        bottom: -.5em;
+        height: calc(100% + 1em);
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
+        &.active{
+            opacity: 1;
+            pointer-events: auto;
+            transition: .5s .5s; 
+        }
+                .input-group{
+                    position: relative;
+                }
+                    input{
+                        display: block;
+                        min-width: 19em;
+                        border: none;
+                        border-bottom: 1px solid #707070;
+                        background: none;
+                        line-height: 1.47;
+                    }
+                    .news-cancel-btn{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: #9ba6b2;
+                        transition: .3s;
+                        &:hover{
+                            background: #0024de;
+                        }
+                        &::before, &::after{
+                            content: "";
+                            width: 7px;
+                            height: 1px;
+                            display: block;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            margin: auto;
+                            background: #fff;
+                            position: absolute;
+
+                        }
+                        &::before{
+                            transform: rotate(45deg);
+                        }
+                        &::after{
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
 }
