@@ -73,10 +73,19 @@
 .half-col {
   width: 50%;
   padding: 0 15px;
+  @media(max-width: 567px){
+    width: 100%;
+  }
 }
 .quarter-col {
   width: 25%;
   padding: 0 15px;
+  @media(max-width: 992px){
+    width: 50%;
+  }
+  @media(max-width: 567px){
+    width: 100%;
+  }
 }
 .row {
   margin: 0 -15px;
@@ -110,6 +119,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  
   &:hover {
     background: #0024de;
   }
@@ -261,4 +271,16 @@ position: absolute;
   opacity: 0;
   pointer-events: none;
   transition: .8s;
+}
+
+.mobile-hide{
+@media(max-width: 992px){
+  display: none!important;
+}
+}
+
+.destop-hide{
+  @media(min-width: 993px){
+    display: none!important;
+  }
 }
