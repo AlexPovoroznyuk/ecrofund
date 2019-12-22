@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
-    @@include('./components/_head.html')
+    @@include('./components/_head.html',{
+        "headTitle" : "EcroSystem News Page",
+        "headDescription" : "EcroSystem News Page"
+    })
     <body>
-        @@include('./components/_header.html')
+        @@include('./components/_header.html', {
+            "homelink" : "href='/'"
+        })
         @@include('./components/_caption.html', {
             "caption": "Новости",
             "rightPart": "Поиск по новостям",

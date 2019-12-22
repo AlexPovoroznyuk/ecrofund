@@ -1,50 +1,118 @@
 header {
+    .mobile-navigation {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+        z-index: 999;
+        padding: 4em 1em;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: .3s;
+        &.active{
+            opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        }
+        .nav-close {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            &::before, &::after{
+                height: 2px;
+                background: #9BA6B2;
+            }
+        }
 
-    .burger-wr{
+        .navigation-inner {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .nav-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .nav-title {
+            margin-bottom: .4em;
+
+            p {}
+        }
+
+        .nav-item {
+            a {
+                line-height: 1.44;
+            }
+        }
+    }
+
+    .burger-wr {
         display: flex;
         align-items: center;
         margin-left: 1.4em;
-                .burger{
-width: 30px;
-height: 20px;
-position: relative;
-&::before, &::after{
-    content: '';
-    position: absolute;
-width: 100%;
-height: 2px;
-background: #221e1e;
-left: 0;
-right: 0;
-margin: auto;
-}
-&::before{
-top: 0;
-} 
-&::after{
-bottom: 0;
-}
-                }
-                    span{
-position: absolute;
-width: 100%;
-height: 2px;
-background: #221e1e;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-                    }
-                }
-    &.search-mod{
-        .left-part{
-            .links-wr{
+
+        .burger {
+            width: 30px;
+            height: 20px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #221e1e;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #221e1e;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    &.search-mod {
+        .left-part {
+            .links-wr {
                 opacity: 0;
                 transition: .3s;
             }
         }
-        .right-part{
+
+        .right-part {
             opacity: 0;
             transition: .3s;
         }
@@ -68,7 +136,8 @@ margin: auto;
             margin-left: .5em;
             height: .6em;
             width: auto;
-            @media(max-width: 992px){
+
+            @media(max-width: 992px) {
                 height: .9em;
             }
         }
@@ -81,6 +150,7 @@ margin: auto;
         padding-top: .85em;
         padding-bottom: .85em;
         position: relative;
+
         .search-container {
             position: absolute;
             background: #fff;
@@ -94,27 +164,32 @@ margin: auto;
             opacity: 0;
             pointer-events: none;
             transition: .3s;
-            @media(max-width: 1200px){
+
+            @media(max-width: 1200px) {
                 right: .85em;
             }
-            @media(max-width: 460px){
+
+            @media(max-width: 460px) {
                 left: 3.2em;
             }
-            &.active{
+
+            &.active {
                 opacity: 1;
-            pointer-events: auto;
-            transition: .3s .1s;
+                pointer-events: auto;
+                transition: .3s .1s;
             }
+
             .input-group {
                 display: flex;
                 position: relative;
                 width: 100%;
                 align-items: center;
             }
-    
+
             .search-input {
                 width: 100%;
                 position: relative;
+
                 input {
                     width: 100%;
                     display: block;
@@ -123,71 +198,71 @@ margin: auto;
                     padding: 0 .7em;
                     border: 1px solid #707070;
                     padding-right: 3em;
-                    @media(max-width: 992px){
+
+                    @media(max-width: 992px) {
                         line-height: 35px;
                     }
                 }
             }
-    
+
             .search-btn {
                 position: absolute;
                 right: 0;
                 top: 0;
                 bottom: 0;
-                padding:0 .7em;
+                padding: 0 .7em;
                 transition: .3s;
                 border-radius: 4px;
-                &:hover{
+
+                &:hover {
                     background: #0024de;
-                    circle{
+
+                    circle {
                         stroke: #fff;
                     }
-                    rect{
+
+                    rect {
                         fill: #fff;
                     }
                 }
+
                 svg {
                     width: 19px;
-    height: auto;
-    rect{
-        transition: .3s;
-    }
-    circle{
-        transition: .3s;
-    }
+                    height: auto;
+
+                    rect {
+                        transition: .3s;
+                    }
+
+                    circle {
+                        transition: .3s;
+                    }
                 }
             }
-    
+
             .cancel-btn {
                 margin-left: 1.2em;
-                @media(max-width: 567px){
+                &::before,
+                &::after {
+                    display: none;
+                }
+                @media(max-width: 567px) {
                     min-width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #9ba6b2;
-    position: relative;
-    &::before, &::after{
-        content: "";
-        width: 12px;
-    height: 2px;
-        display: block;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background: #fff;
-        position: absolute;
+                    height: 24px;
+                    border-radius: 50%;
+                    background: #9ba6b2;
+                    position: relative;
 
-    }
-    &::before{
-        transform: rotate(45deg);
-    }
-    &::after{
-        transform: rotate(-45deg);
-    }
-                span{
-                    
+                    &::before,
+                    &::after {
+                        width: 12px;
+                        height: 2px;
+                        display: block;
+                        background: #fff;
+                    }
+
+                    span {
+
                         display: none;
                     }
                 }
@@ -198,9 +273,11 @@ margin: auto;
     .left-part {
         display: flex;
         width: 29.65em;
-        .links-wr{
+
+        .links-wr {
             transition: .3s .2s;
-            @media(max-width: 1200px){
+
+            @media(max-width: 1200px) {
                 max-width: 17em;
             }
         }
@@ -210,17 +287,21 @@ margin: auto;
         margin-right: 2em;
         width: 8em;
         margin-left: -1px;
-        @media(max-width: 460px){
+
+        @media(max-width: 460px) {
             width: auto;
-            a{
+
+            a {
                 width: 30px;
                 overflow: hidden;
             }
-            img{
+
+            img {
                 width: auto;
                 max-width: unset;
             }
         }
+
         a {
             display: block;
         }
@@ -230,18 +311,21 @@ margin: auto;
             display: block;
         }
     }
-    
+
     .right-part {
         display: flex;
         width: 19.75em;
         transition: .3s .2s;
-        @media(max-width: 1200px){
+
+        @media(max-width: 1200px) {
             width: 18.5em;
         }
-        @media(max-width: 992px){
+
+        @media(max-width: 992px) {
             width: auto;
-        .links-wr {
-            
+
+            .links-wr {
+
                 flex-grow: auto;
             }
         }
