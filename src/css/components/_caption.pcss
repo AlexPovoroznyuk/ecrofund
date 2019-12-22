@@ -2,10 +2,14 @@
     background: #F4F8FC;
     .news-search{
         
-        transition: .5s .5s;
+           transition: .5s .5s; 
+        
+        
         &.hide{
+            
             opacity: 0;
             transition: .5s;
+            
         }
     }
     .caption-wrap{
@@ -48,6 +52,11 @@
                         border-bottom: 1px solid #707070;
                         background: none;
                         line-height: 1.47;
+                        padding-right: 20px;
+                        @media(max-width: 460px){
+                            
+                            min-width: unset;
+                        }
                     }
                     .news-cancel-btn{
                         position: absolute;
