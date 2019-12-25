@@ -20,6 +20,13 @@
     font-size: 20px;
   }
 }
+.font-20b {
+  font-size: 1em;
+  font-weight: 600;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
 .font-18b {
   font-size: 0.9em;
   font-weight: 600;
@@ -57,6 +64,13 @@
 }
 .font-13b {
   font-weight: 600;
+  font-size: 0.65em;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
+}
+.font-13th {
+  font-weight: 200;
   font-size: 0.65em;
   @media (max-width: 600px) {
     font-size: 13px;
@@ -230,12 +244,11 @@
 }
 
 .drop-trigger{
-position: relative;
-z-index: 2;
-
+  position: relative;
+  z-index: 2;
 }
 .hover-container{
-position: absolute;
+  position: absolute;
   top: 0;
   left: -10px;
   min-width: calc(100% + 20px);
@@ -245,7 +258,6 @@ position: absolute;
   padding-top: 1.2em;
   transform: translateY(-10px);
   transition: .2s;
-  
 }  
 .drop-container {
   background-color: #fff;
@@ -273,7 +285,6 @@ position: absolute;
   }
 }
 
-
 .overlay{
   position: absolute;
   top: 0;
@@ -288,9 +299,9 @@ position: absolute;
 }
 
 .mobile-hide{
-@media(max-width: 992px){
-  display: none!important;
-}
+  @media(max-width: 992px){
+    display: none!important;
+  }
 }
 
 .destop-hide{
@@ -302,27 +313,21 @@ position: absolute;
 
 .close{
   position: relative;
-
-                    &::before,
-                    &::after {
-                        content: "";
-                        
-                        display: block;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        margin: auto;
-                        
-                        position: absolute;
-
-                    }
-
-                    &::before {
-                        transform: rotate(45deg);
-                    }
-
-                    &::after {
-                        transform: rotate(-45deg);
-                    }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
 }
