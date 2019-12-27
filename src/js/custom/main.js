@@ -8,6 +8,15 @@ $(".search-cancel").click(function(){
     $("header").removeClass("search-mod");
 })
 
+$('.faq-item').click(function(){
+    if($(this).hasClass("faq-item-open")){
+        $(this).removeClass("faq-item-open");
+    }else{
+        $(this).addClass("faq-item-open");
+    }
+});
+
+
 $(function($){
     $(document).mouseup(function (e){
         var block = $(".search-container");

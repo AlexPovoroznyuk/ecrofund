@@ -61,7 +61,20 @@
     .icon{
         background: #221E1E;
         padding-top: 29%;
-        
+        position: relative;
+    }
+    .icon-wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 2em;
+        }
     }
     .title{
         padding-left: 1em;
@@ -85,5 +98,91 @@
     }
     .caption{
         margin-bottom: 1.8em;
+    }
+    .input-group {
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 100%;
+            display: block;
+            line-height: 40px;
+            border-radius: 4px;
+            padding: 0 .7em;
+            border: 1px solid #707070;
+            padding-left: 3em;
+
+            @media(max-width: 992px) {
+                line-height: 35px;
+            }
+        }
+    }
+
+    .search-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0 .7em;
+        transition: .3s;
+        &:hover {
+            background: #0024de;
+            circle {
+                stroke: #fff;
+            }
+            rect {
+                fill: #fff;
+            }
+        }
+        svg {
+            width: 19px;
+            height: auto;
+            rect {
+                transition: .3s;
+            }
+            circle {
+                transition: .3s;
+            }
+        }
+    }
+    .faq{
+        background: #F5FBFF;
+        padding-top: 2.5em; 
+    }
+    .acc-caption{
+        background: #FFFFFF;
+        padding: 1em; 
+        svg{
+            transform: rotate(-90deg);
+        }
+    }
+    .accordion-list{
+        color: #0760E8;
+        background: #FFFFFF;
+        
+        border-top: 1px solid #CFD9E0;
+        border-bottom: 1px solid #CFD9E0;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        p{
+            margin-bottom: .5em;
+        }
+    }
+    .faq-item-open{
+        svg{
+            transform: rotate(0);
+        }
+        .accordion-list{
+            padding: 1em; 
+            max-height: none;
+        }
     }
 }
