@@ -1,0 +1,233 @@
+.home{
+    .events-caption{
+        margin-bottom: 2.5em;
+    }
+    .see-all{
+        span{
+            color: #0024DE;
+        }
+        .arrow{
+            width: 2em;
+            height: 1px;
+            background: #0024DE;
+            position: relative;
+            margin-left: .5em;
+            margin-top: 2px;
+            .tip{
+                border-top: 1px solid #0024DE;
+                border-right: 1px solid #0024DE;
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                top: -3px;
+                right: 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .event-item{
+        flex-direction: row-reverse;
+        align-items: stretch;
+        margin-bottom: 2.6em;
+        @media(max-width: 920px){
+            flex-wrap: wrap;
+            .img-col{
+                max-width: none;
+            }
+            .txt-col{
+                max-width: none;
+            }
+        }
+        @media(max-width: 992px){
+            flex-wrap: wrap;
+        }
+    }
+    .caption{
+        margin-bottom: .4em;
+        letter-spacing: 1.2px;
+    }
+    .description{
+        margin-bottom: 1.85em;
+        padding-right: 2em;
+        @media(max-width: 450px){
+            padding-right: 0;
+        }
+    }
+    .info-wr{
+        margin-top: auto;
+        margin-bottom: .5em;
+    }
+    .img-col{
+        width: 46.7%;
+        @media(max-width: 992px){
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+    .txt-col{
+        width: 53.3%;
+        flex-direction: column;
+        display: flex;
+        
+        @media(max-width: 992px){
+            width: 100%;
+            padding-left: 15px;
+        }
+    }
+    .link-wrap{
+        text-transform: uppercase;
+        @media(max-width: 992px){
+            margin-bottom: 1em;
+        }
+    }
+    .descr-lnk{
+        display: inline-flex;
+        svg{
+            margin-top: 1px;
+            margin-left: .7em;
+            @media(max-width: 992px){
+                margin-top: 0;
+                margin-bottom: 1px;
+            }
+        }
+    }
+    .params{
+        justify-content: flex-start;
+        color: #9BA6B2;
+        margin-bottom: .6em;
+    }
+    .location{
+        margin-right: 1.5em;
+        svg{
+            margin-bottom: -1px;
+        }
+    }
+    .press{
+       .see-all > a{
+           justify-content: flex-start;
+       }
+    }
+    .press-list{
+        margin-bottom: 2em;
+        align-items: flex-start;
+    }
+    .info{
+        color: #9BA6B2;
+    }
+    .about-ecro{
+        color: #fff;
+        background: #0760E8;
+        padding-top: 1.9em;
+        margin-bottom: 2.5em;
+        .white{
+            color: #fff;
+            text-transform: uppercase;
+            rect{
+                fill: #fff;
+            }
+        }
+        .caption{
+            margin-bottom: 1.5em;
+        }
+        .description{
+            max-width: 540px;
+            margin-bottom: 1.5em;
+        }
+        .container{
+            width: calc(54.6em - 30px);
+        }
+        .item-title{
+            margin-bottom: .6em;
+        }
+        .item-description{
+            margin-bottom: .6em;
+        }
+    }
+    .investment-item{
+        width: 50%;
+        padding-right: 7em;
+        margin-bottom: 2.5em;
+    }
+    .risk{
+       height: .4em;
+       width: 4.5em;
+       background: #fff; 
+       margin-bottom: 1.5em;
+    }
+    .about-ecro-list{
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+}
+.quotation{
+    margin-bottom: 2em;
+    .container{
+        max-width: calc(58.6em - 30px);
+    }
+    .quotation-item{
+        align-items: flex-start;
+        width: 20%
+    }
+    .quotation-description{
+        width: 70%;
+    }
+    .quotation-schedule{
+        width: 30%;
+
+    }
+    .name, .size{
+        margin-bottom: .5em;
+    }
+    .balans{
+        text-align: right;
+        color: #3CA32E;
+        margin-bottom: .5em;
+    }
+    .schedule{
+        width: 100%;
+        padding-top: 50%;
+        background: url('../img/pics/quotation-green.png') no-repeat;
+    }
+    .red{
+        .balans{
+            color: #D32012;
+        }
+        .schedule{
+            width: 100%;
+            padding-top: 50%;
+            background: url('../img/pics/quotation-red.png') no-repeat;
+        }
+    }
+}
+.product-list{
+    margin-bottom: 2.7em;
+    align-items: stretch;
+}
+.product-item{
+    width: 24%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .blue-lnk-style{
+        span{
+            text-transform: uppercase;
+        }
+    }
+    .img-wrap{
+        width: 100%;
+        padding-top: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%; 
+        margin-bottom: 1em;
+    }
+    .product-description{
+        margin-bottom: .5em;
+    }
+    .product-title{
+        margin-bottom: .5em;
+    }
+    .blue-lnk-style{
+        margin-top: auto;
+    }
+}
