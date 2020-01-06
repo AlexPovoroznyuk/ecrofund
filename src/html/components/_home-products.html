@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="events-caption flex">
+        <div class="title">
+            <span class="font-30b">Продукты ECROSystem</span>
+
+        </div>
+        <div class="see-all">
+            <a href="#" class="flex">
+                <span class="font-13r">Смотреть все</span>
+                <div class="arrow">
+                    <div class="tip"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="product-list flex row">
+        @@include("./_product-item.html", {
+            "img": "../img/pics/product-1.png",
+            "title": "Маркетплейс ECRO",
+            "description": "Блокчейн-маркетплейс с для покупки товаров и услуг за криптовалюты",
+            "link": "#"
+        })
+        @@include("./_product-item.html", {
+            "img": "../img/pics/product-2.png",
+            "title": "Биржа B2B",
+            "description": "Децентрализованная обменная платформа для обмена монет и криптовалют",
+            "link": "#"
+        })
+        @@include("./_product-item.html", {
+            "img": "../img/pics/product-3.png",
+            "title": "ECRO StartUp",
+            "description": "Площадка для реализации пользовательских проектов и голосования за перспективные проекты сообщества",
+            "link": "#"
+        })
+        @@include("./_product-item.html", {
+            "img": "../img/pics/product-3.png",
+            "title": "EDC Blockchain",
+            "description": "Новый веток в сфере строительства жилых и коммерческих сооружений",
+            "link": "#"
+        })
+    </div>
+</div>

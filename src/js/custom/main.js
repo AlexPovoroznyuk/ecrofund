@@ -8,6 +8,15 @@ $(".search-cancel").click(function(){
     $("header").removeClass("search-mod");
 })
 
+$('.faq-item').click(function(){
+    if($(this).hasClass("faq-item-open")){
+        $(this).removeClass("faq-item-open");
+    }else{
+        $(this).addClass("faq-item-open");
+    }
+});
+
+
 $(function($){
     $(document).mouseup(function (e){
         var block = $(".search-container");
@@ -54,4 +63,9 @@ $(".burger").click(function(){
 $(".nav-close").click(function(){
     $(".mobile-navigation").removeClass("active");
     $("body").removeClass("nav-open");
+})
+
+$(".toogler button").click(function(){
+    $(".toogler button").removeClass("active")
+    $(this).addClass("active");
 })
