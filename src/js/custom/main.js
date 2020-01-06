@@ -64,3 +64,8 @@ $(".nav-close").click(function(){
     $(".mobile-navigation").removeClass("active");
     $("body").removeClass("nav-open");
 })
+
+$(".toogler button").click(function(){
+    $(".toogler button").removeClass("active")
+    $(this).addClass("active");
+})

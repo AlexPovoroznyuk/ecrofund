@@ -1,0 +1,122 @@
+.webinars {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    &+.subscribe-container{
+        @media(min-width: 521px){
+        padding-top: 2em;
+        }
+    }
+    .toogler {
+        max-width: 27em;
+        margin-bottom: 2.9em;
+        @media(max-width: 992px){
+            max-width: unset;
+        }
+        button {
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 2px;
+                background: transparent;
+                transition: .3s;
+                bottom: -4px;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+            &:hover, &.active{
+                &::after{
+                    background: #0024de;
+                    width: 100%;
+                }
+                span{
+                    color: #0024de;
+                }
+            }
+        }
+
+        span {
+            @media(max-width: 460px){
+               font-size: 11px; 
+            }
+            
+        }
+    }
+    .webinars-wr{
+        align-items: flex-start;
+        @media(max-width: 992px){
+            flex-direction: column;
+        }
+    }
+    .left-col {
+max-width: 27em;
+width: calc(50% - 15px);
+@media(max-width: 992px){
+    max-width: unset;
+    width: 100%;
+}
+    }
+
+    
+
+    .current-webinar {
+        position: relative;
+        margin-bottom: 2.85em;
+        .sticker {
+            position: absolute;
+            padding: .5em 1em;
+            background: #0760E8;
+            top: .7em;
+            span {
+                color: #fff;
+                display: block;
+            }
+        }
+
+        .img-container {
+            width: 100%;
+            padding-top: 59%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: .7em;
+        }
+
+        .date {
+            margin-bottom: .85em;
+            span {
+               color: #9BA6B2;
+            }
+        }
+
+        .title {
+            margin-bottom: .95em;
+            span {
+                @media(max-width: 1200px){
+                    font-size: .75em;
+                }
+            }
+        }
+
+        .webinar-lnk {
+            display: flex;
+    flex-direction: column;
+            span {
+                display: block;
+            }
+
+            a {}
+        }
+    }
+
+    .right-col {
+        max-width: 27em;
+        width: calc(50% - 15px);
+        @media(max-width: 992px){
+            max-width: unset;
+            width: 100%;
+        }
+    }
+}
