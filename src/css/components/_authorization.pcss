@@ -1,0 +1,121 @@
+.authorization{
+    width: 100%;
+    height: auto;
+    background: #0B2139;
+    .auth-container{
+        width: 100%;
+        max-width: 630px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 5em;
+        height: 1em;
+        margin: 0 auto 1.6em;
+        background: red;
+    }
+    .description{
+        color: #9BA6B2;
+        text-align: center;
+        margin-bottom: 1.25em;
+    }
+    .sing{
+        background: #fff;
+        border-radius: 4px;
+        padding: 1.5em 2.2em 1.6em;
+    }
+    .input{
+        width: 100%;
+        border: 1px solid #CFD9E0;
+        padding: 1em .9em;
+        border-radius: 4px;
+    }
+    .input-wrap{
+        margin-bottom: .5em;
+    }
+    .sing-caption{
+        text-align: center;
+        margin-bottom: .25em;
+    }
+    .sing-description{
+        text-align: center;
+        margin-bottom: .75em;
+    }
+    .or-block{
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+    .or{
+        margin-bottom: 1em;
+    }
+    .separator{
+        width: 100%;
+        height: 1px;
+        background: #CFD9E0;
+    }
+    .about-pass{
+        max-width: 450px;
+        margin: 0 auto 1.5em;
+        text-align: center;
+        color: #9BA6B2;
+
+    }
+    .checkbox{
+        justify-content: flex-start;
+        margin-bottom: .5em;
+    }
+    .input-checkbox{
+        display: none;
+    }
+    .input-checkbox + label{
+        width: 1em;
+        height: 1em;
+        margin-right: 1em;
+        border: 1px solid #CFD9E0;
+        border-radius: 2px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: .7em;
+            height: .7em;
+            background: transparent;
+            border-radius: 2px;
+        }
+    }
+    .input-checkbox:checked + label::after{
+        background: #CFD9E0;
+    }
+    .button{
+        margin-bottom: .3em;
+    }
+    .button-wrap{
+        margin-bottom: 1em;
+    }
+    .social-button{
+        width: 30%;
+        padding-top: .6em;
+        padding-bottom: .6em; 
+        justify-content: center;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    .google{
+        border: 1px solid #CFD9E0;
+    }
+    .fb{
+        background: #3D5698;
+        color: #fff; 
+    }
+    .twitter{
+        background: #58ABEE;
+        color: #fff;
+    }
+}
