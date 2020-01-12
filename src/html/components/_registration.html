@@ -1,4 +1,4 @@
-<div class="authorization flex">
+<div class="authorization flex registration">
     <div class="auth-container">
         <div class="logo">
             <img src="./img/pics/eps-white.svg" alt="" />
@@ -10,7 +10,7 @@
         </div>
         <div class="sing">
             <div class="sing-caption">
-                <p class="font-30b">Sign up</p>
+                <p class="font-30b">Sign in</p>
             </div>
             <div class="sing-description">
                 <p class="font-14th">with your social network</p>
@@ -36,27 +36,28 @@
             </div>
             <form name="" action="">
                 <div class="input-wrap">
-                    <input type="text" name="name" class="input font-14r" placeholder="Username" />
-                </div>
-                <div class="input-wrap">
-                    <input type="email" name="email" class="input font-14r" placeholder="Email" />
+                    <input type="email" name="email" class="input font-14r" placeholder="Username or Email" />
+                    <button class="close"></button>
                 </div>
                 <div class="input-wrap">
                     <input type="password" name="password" class="input font-14r" placeholder="Password" />
-                </div>
-                <div class="about-pass">
-                    <p class="font-13r">Your password must be at least 6 characters long and must contain letters, numbers and special characters. Cannot contain whitespace.</p>
+                    <button class="close"></button>
                 </div>
                 <div class="checkbox flex">
+                    <p class="font-13r">Keep me signed in</p>
                     <input type="checkbox" id="subscribe" class="input-checkbox" />
                     <label for="subscribe"></label>
-                    <p class="font-13r">I wish to receive newsletters, promotions and news from ECROSystem.</p>
                 </div>
                 <button class="button" type="submit">
                     <span class="font-14r">Sign up</span>
                 </button>
-                <div class="already">
-                    <a href="" class="font-13r blue">Already registered? Sign in</a> 
+                <div class="link-wrap flex">
+                    <div class="already">
+                        <a href="" class="font-13r blue">Not a member? Sign up</a> 
+                    </div>
+                    <div class="already">
+                        <a href="" class="font-13r blue">I can’t remember my password</a> 
+                    </div>
                 </div>
             </form>
         </div>

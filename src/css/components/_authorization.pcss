@@ -39,6 +39,7 @@
     }
     .input-wrap{
         margin-bottom: .6em;
+        position: relative;
     }
     .sing-caption{
         text-align: center;
@@ -104,6 +105,9 @@
     .button{
         padding: .8em 1em;
         border-radius: .2em;
+        span{
+            text-transform: none;
+        }
     }
     .button-wrap{
         margin-bottom: .9em;
@@ -142,6 +146,61 @@
                 width: 100%;
                 margin-bottom: .5em;
             }
+        }
+    }
+}
+.registration{
+    align-items: flex-start;
+    .checkbox {
+        margin-top: .7em;
+        margin-bottom: .8em;
+        label{
+            margin-left: .34em;
+            margin-right: 0;
+           
+        }
+    }
+    .button{
+        margin-bottom: .6em;
+    }
+    .sing{
+        padding-bottom: 2em;
+    }
+    .input:focus{
+       border-color:  #0760E8;
+    }
+    .input:focus + button{
+        display: block;
+     }
+    .close{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: .75em;
+        display: none;
+        &::before,
+        &::after{
+            background: #0760E8;
+        }
+        &::before{
+            width: 100%;
+            height: 1px;
+        }
+        &::after{
+            width: 100%;
+            height: 1px;
+        }
+    }
+    @media(max-width: 400px){
+        .already{
+            width: 100%;
+            margin-bottom: .5em;
+        }
+        .link-wrap{
+            flex-wrap: wrap;
         }
     }
 }
