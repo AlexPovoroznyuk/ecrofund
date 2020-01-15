@@ -1,0 +1,206 @@
+.authorization{
+    width: 100%;
+    min-height: 100vh;
+    background: #0B2139;
+    padding-top: 5em;
+    padding-bottom: 2.5em;
+    .auth-container{
+        width: 100%;
+        max-width: 630px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 12em;
+        margin: 0 auto 1.4em;
+    }
+    .description{
+        color: #9BA6B2;
+        text-align: center;
+        margin-bottom: 1.25em;
+        p{
+            letter-spacing: .4px;
+        }
+        span{
+            font-weight: 400;
+        }
+    }
+    .sing{
+        background: #fff;
+        border-radius: 4px;
+        padding: 1.7em 2.2em 1.6em;
+    }
+    .input{
+        width: 100%;
+        border: 1px solid #CFD9E0;
+        padding: 1.3em 1.1em;
+        border-radius: 4px;
+    }
+    .input-wrap{
+        margin-bottom: .6em;
+        position: relative;
+    }
+    .sing-caption{
+        text-align: center;
+        margin-bottom: .3em;
+    }
+    .sing-description{
+        text-align: center;
+        margin-bottom: .75em;
+    }
+    .or-block{
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+    .or{
+        margin-bottom: 1em;
+    }
+    .separator{
+        width: 100%;
+        height: 1px;
+        background: #CFD9E0;
+    }
+    .about-pass{
+        max-width: 450px;
+        margin: 1.3em auto 1.5em;
+        text-align: center;
+        color: #9BA6B2;
+        p{
+            line-height: 1.4;
+        }
+    }
+    .checkbox{
+        justify-content: flex-start;
+        margin-bottom: .4em;
+    }
+    .input-checkbox{
+        display: none;
+    }
+    .input-checkbox + label{
+        width: 1em;
+        height: 1em;
+        margin-right: .4em;
+        border: 1px solid #CFD9E0;
+        border-radius: 2px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: .7em;
+            height: .7em;
+            background: transparent;
+            border-radius: 2px;
+        }
+    }
+    .input-checkbox:checked + label::after{
+        background: #CFD9E0;
+    }
+    .button{
+        padding: .8em 1em;
+        border-radius: .2em;
+        span{
+            text-transform: none;
+        }
+    }
+    .button-wrap{
+        margin-bottom: .9em;
+    }
+    .social-button{
+        width: 32%;
+        min-height: 2em;
+        justify-content: center;
+        border-radius: 4px;
+        text-transform: uppercase;
+        
+        img{
+            width: auto;
+            margin-right: .5em;
+        }
+    }
+    .google{
+        border: 1px solid #CFD9E0;
+    }
+    .fb{
+        background: #3D5698;
+        color: #fff; 
+    }
+    .twitter{
+        background: #58ABEE;
+        color: #fff;
+    }
+    @media(max-width: 460px){
+        .sing{
+            padding-left: .5em;
+            padding-right: .5em;
+        }
+        .button-wrap{
+            flex-wrap: wrap;
+            .social-button{
+                width: 100%;
+                margin-bottom: .5em;
+            }
+        }
+    }
+}
+.registration{
+    align-items: flex-start;
+    .checkbox {
+        margin-top: .7em;
+        margin-bottom: .8em;
+        label{
+            margin-left: .34em;
+            margin-right: 0;
+           
+        }
+    }
+    .button{
+        margin-bottom: .6em;
+    }
+    .sing{
+        padding-bottom: 2em;
+    }
+    .input:focus{
+       border-color:  #0760E8;
+    }
+    .input:focus + button{
+        display: block;
+     }
+    .close{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: .75em;
+        display: none;
+        &::before,
+        &::after{
+            background: #0760E8;
+        }
+        &::before{
+            width: 100%;
+            height: 1px;
+        }
+        &::after{
+            width: 100%;
+            height: 1px;
+        }
+    }
+    @media(max-width: 400px){
+        .already{
+            width: 100%;
+            margin-bottom: .5em;
+        }
+        .link-wrap{
+            flex-wrap: wrap;
+        }
+    }
+}
