@@ -125,7 +125,9 @@
         </blockquote>
     </section>
     @@include('./_home-events.html')
-    @@include('./_home-news.html')
+    @@include('./_home-news.html', {
+        "head" : "Новости"
+    })
     @@include('./_home-press.html')
     @@include('./_subscribe.html')
 </main>

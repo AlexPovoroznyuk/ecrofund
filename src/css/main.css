@@ -29,4 +29,6 @@ Main style file
 @import "./components/_webinars.pcss";
 @import "./components/_webinars-item.pcss";
 
+@import "./components/_marketplace.pcss";
+
 
