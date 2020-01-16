@@ -369,3 +369,24 @@
       transform: rotate(-45deg);
     }
 }
+
+.error{
+  position: absolute;
+  bottom: -1.1em;
+  color: #EB0045;
+  opacity: 0;
+  transition: .3s;
+  pointer-events: none;
+}
+
+div.input-item{
+  position: relative;
+  &.validation-error{
+    input{
+      border-color: #EB0045;
+    }
+    .error{
+      opacity: 1;
+    }
+  }
+}

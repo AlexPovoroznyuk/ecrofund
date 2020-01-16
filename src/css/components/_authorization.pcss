@@ -2,8 +2,16 @@
     width: 100%;
     min-height: 100vh;
     background: #0B2139;
-    padding-top: 5em;
-    padding-bottom: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    @media(min-width: 1441px){
+        font-size: 20px;
+    }
+    .error{
+        bottom: -0.8em;
+    }
     .auth-container{
         width: 100%;
         max-width: 630px;
@@ -38,7 +46,7 @@
         border-radius: 4px;
     }
     .input-wrap{
-        margin-bottom: .6em;
+        margin-bottom: .85em;
         position: relative;
     }
     .sing-caption{
@@ -46,7 +54,7 @@
         margin-bottom: .3em;
     }
     .sing-description{
-        text-align: center;
+        text-align: center; 
         margin-bottom: .75em;
     }
     .or-block{
@@ -74,13 +82,16 @@
     .checkbox{
         justify-content: flex-start;
         margin-bottom: .4em;
+        @media(max-width:992px){
+            align-items: flex-start;
+        }
     }
     .input-checkbox{
         display: none;
     }
     .input-checkbox + label{
-        width: 1em;
-        height: 1em;
+        min-width: 1em;
+        min-height: 1em;
         margin-right: .4em;
         border: 1px solid #CFD9E0;
         border-radius: 2px;
@@ -150,10 +161,20 @@
     }
 }
 .registration{
-    align-items: flex-start;
+    align-items: center;
+    @media(min-width: 1441px){
+        font-size: 20px;
+    }
+    .error{
+        bottom: -0.8em;
+    }
     .checkbox {
         margin-top: .7em;
         margin-bottom: .8em;
+        @media(max-width:992px){
+            align-items: flex-start;
+        }
+        
         label{
             margin-left: .34em;
             margin-right: 0;
