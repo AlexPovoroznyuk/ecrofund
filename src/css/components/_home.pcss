@@ -454,15 +454,22 @@
     .blockquote-item{
         max-width: 1020px;
         margin: 0 auto;
-    }
-    .img-wrap{
-        width: 10%;
-        height: 100px;
-        background: #0024DE;
-        margin-bottom: auto;
+        
     }
     blockquote{
-        width: calc(90% - 15px);
+        padding-left: 5em;
+        position: relative;
+
+        &::before{
+            content: '"';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            font-family: Kokonor;
+            font-size: 10em;
+            color: #9BA6B2;
+        }
     }
     .author{
         margin-top: 1.6em;
