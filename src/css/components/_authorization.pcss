@@ -2,8 +2,17 @@
     width: 100%;
     min-height: 100vh;
     background: #0B2139;
-    padding-top: 5em;
-    padding-bottom: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    @media(min-width: 1441px){
+        font-size: 20px;
+    }
+    .error{
+        position: static;
+        text-align: center;
+    }
     .auth-container{
         width: 100%;
         max-width: 630px;
@@ -14,6 +23,7 @@
     .logo{
         width: 12em;
         margin: 0 auto 1.4em;
+        display: block;
     }
     .description{
         color: #9BA6B2;
@@ -22,7 +32,8 @@
         p{
             letter-spacing: .4px;
         }
-        span{
+        a{
+            color: #9BA6B2;
             font-weight: 400;
         }
     }
@@ -38,7 +49,7 @@
         border-radius: 4px;
     }
     .input-wrap{
-        margin-bottom: .6em;
+        margin-bottom: .5em;
         position: relative;
     }
     .sing-caption{
@@ -46,7 +57,7 @@
         margin-bottom: .3em;
     }
     .sing-description{
-        text-align: center;
+        text-align: center; 
         margin-bottom: .75em;
     }
     .or-block{
@@ -64,7 +75,7 @@
     }
     .about-pass{
         max-width: 450px;
-        margin: 1.3em auto 1.5em;
+        margin: calc(.8em - 10px) auto 1.5em;
         text-align: center;
         color: #9BA6B2;
         p{
@@ -74,34 +85,70 @@
     .checkbox{
         justify-content: flex-start;
         margin-bottom: .4em;
+        @media(max-width:992px){
+            align-items: flex-start;
+        }
     }
     .input-checkbox{
         display: none;
     }
     .input-checkbox + label{
-        width: 1em;
+        min-width: 1em;
+        min-height: 1em;
         height: 1em;
         margin-right: .4em;
         border: 1px solid #CFD9E0;
         border-radius: 2px;
         position: relative;
-        &::after{
-            content: "";
-            position: absolute;
+        transition: .3s;
+        span{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
+            transform: rotate(0);
             top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: .7em;
-            height: .7em;
-            background: transparent;
-            border-radius: 2px;
+           
+            transition: .3s;
+            &::after,&::before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 3px;
+                display: block;
+                background: transparent;
+                transition: .3s;
+            }
+            &::before{
+                width: 45%;
+                
+                transform: rotate(90deg);
+                right: auto;
+                left: -3px;
+                bottom: 3px;
+            }
         }
+        
     }
-    .input-checkbox:checked + label::after{
-        background: #CFD9E0;
-    }
+    .input-checkbox{
+    &:checked {
+    & + label{
+        border-color: transparent;
+        span{
+            transform: rotate(-45deg);
+            top: -7px;
+            &::after, &::before{
+                background: #0024de;
+            }
+        }
+    
+}
+}
+}
     .button{
         padding: .8em 1em;
         border-radius: .2em;
@@ -118,7 +165,7 @@
         justify-content: center;
         border-radius: 4px;
         text-transform: uppercase;
-        
+        transition: .3s;
         img{
             width: auto;
             margin-right: .5em;
@@ -126,14 +173,23 @@
     }
     .google{
         border: 1px solid #CFD9E0;
+        &:hover{
+            background-color: #f8fafb;
+        }
     }
     .fb{
         background: #3D5698;
         color: #fff; 
+        &:hover{
+                background: #2d4373;
+        }
     }
     .twitter{
         background: #58ABEE;
         color: #fff;
+        &:hover{
+            background-color: #2795e9;
+        }
     }
     @media(max-width: 460px){
         .sing{
@@ -148,12 +204,86 @@
             }
         }
     }
+    .input:focus{
+        border-color:  #0760E8;
+        &~.close{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        &~.show-pass{
+            opacity: 1;
+            pointer-events: auto;
+        }
+     }
+     .input:focus + button{
+         display: block;
+      }
+     .close{
+         width: 10px;
+         height: 10px;
+         position: absolute;
+         top: 1.1em;
+         margin: auto 0;
+         right: .75em;
+         opacity: 0;
+         /* pointer-events: none; */
+         &::before,
+         &::after{
+             background: #0760E8;
+         }
+         &::before{
+             width: 100%;
+             height: 1px;
+         }
+         &::after{
+             width: 100%;
+             height: 1px;
+         }
+     }
+     .show-pass{
+        position: absolute;
+        top: 1em;
+        right: 15px;
+        height: 14px;
+        display: block;
+        &.show{
+            &::after{
+            opacity: 1;
+            }
+        }
+        &::after{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #221e1e;
+            display: block;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            transform: rotate(-45deg);
+            opacity: 0;
+        }
+        svg{
+            height: 100%;
+    width: auto;
+    display: block;
+        }
+     }
 }
 .registration{
-    align-items: flex-start;
+    align-items: center;
+    @media(min-width: 1441px){
+        font-size: 20px;
+    }
+    
     .checkbox {
         margin-top: .7em;
         margin-bottom: .8em;
+        @media(max-width:992px){
+            align-items: flex-start;
+        }
+        
         label{
             margin-left: .34em;
             margin-right: 0;
@@ -168,6 +298,9 @@
     }
     .input:focus{
        border-color:  #0760E8;
+       &~.close{
+           opacity: 1;
+       }
     }
     .input:focus + button{
         display: block;
@@ -180,7 +313,7 @@
         bottom: 0;
         margin: auto 0;
         right: .75em;
-        display: none;
+        opacity: 0;
         &::before,
         &::after{
             background: #0760E8;
@@ -202,5 +335,38 @@
         .link-wrap{
             flex-wrap: wrap;
         }
+    }
+}
+
+
+.password-validation-error{
+   
+        .error{
+            opacity: 1;
+        }
+    
+}
+
+.password-validation{
+    color: #fff;
+    padding: 5px 10px;
+    max-width: 300px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    transition: background-color .2s cubic-bezier(.165,.84,.44,1);
+    margin-top: .5em;
+    &.short{
+        background-color: #fb5252;
+    }
+    &.weak{
+        background-color: #ffc8af;
+    }
+    &.good{
+        background-color: #69e781;
+    }
+    &.strong{
+        background-color: #00af80;
     }
 }

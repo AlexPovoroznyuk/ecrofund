@@ -7,7 +7,8 @@
     color: #221E1E;
     .news-final-container{
         max-width: 29.9em;
-        margin: 0 auto 4.8em;
+        margin: 0 auto ;
+        padding-bottom: 4.8em;
         @media(max-width: 600px){
             margin-bottom: 1em;
         }
@@ -31,15 +32,7 @@
         padding-bottom: 2em;
         border-top: 1px solid #CFD9E0;
     }
-    .slider-caption{
-        margin-bottom: 3.8em;
-        padding-top: 1.5em;
-        padding-bottom: 2em;
-        border-top: 1px solid #CFD9E0;
-        @media(max-width: 600px){
-            margin-bottom: 0;
-        }
-    }
+   
     .img-container{
         margin-bottom: 0.7em;
     }
@@ -67,11 +60,153 @@
             }
         }
     }
-    .latest-articles{
-        margin-bottom: 11.6em;
+    
+}
+
+.latest-articles{
+    margin-bottom: 11.6em;
+    padding-top: 1.5em;
+    overflow: hidden;
+    
+    @media(max-width: 900px){
+        margin-bottom: 4em;
+    }
+    @media(max-width: 600px){
+        margin-bottom: 0;
+    }
+    .slick-arrow{
+       position: absolute;
+       top: 25%;
+       bottom: 0;
+       height: 3.2em;
+       width: 3.2em;
+       background: rgba(255,255,255,.5) ;
+       border-radius: 50%;
+       z-index: 2;
+       @media(max-width: 567px){
+        font-size: .7em;
+    }
+    @media(max-width: 567px){
+        top: 20%;
+    }
+    @media(max-width: 400px){
+        top: 18%;
+    }
+       &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 1.1em;
+        height: 2px;
+        background: #221E1E;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+       }
+    }
+    .slick-next{
+        right: 25px;
+        &::before{
+            transform: rotate(-45deg);
+            bottom: -23%;
+            left: 10%;
+        }
+        &::after{
+            transform: rotate(45deg);
+            top: -23%;
+            left: 10%;
+        }
+    }
+    .slick-prev{
+        left: 25px;
+        &::before{
+            transform: rotate(45deg);
+            bottom: -23%;
+            right: 10%;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            top: -23%;
+            right: 10%;
+        }
+    }
+    .news-final-container{
+        max-width: 29.9em;
+        margin: 0 auto ;
+        padding-bottom: 4.8em;
+        @media(max-width: 600px){
+            margin-bottom: 1em;
+        }
+    }
+    .slider{
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .slider-inner{
+        max-width: 40em;
+    margin: 0 auto;
+    color: #221e1e;
+    padding-bottom: 0;
+        @media(max-width: 1200px){
+            max-width: 34em;
+        }
+        @media(max-width: 992px){
+            max-width: 32em;
+        }
+        @media(max-width: 800px){
+            max-width: 100%;
+        }
+    }
+
+    
+    .news-item{
+        margin: 0 5.25em;
+        @media(max-width: 1200px){
+            margin: 0 2.25em;
+        }
+        @media(max-width: 992px){
+            margin: 0 1.25em;
+        }
+        @media(max-width: 800px){
+            margin: 0 15px;
+        }
+        .image-container-inner{
+            padding-top: 55.36%;
+        }
+        .item-description {
+            margin-bottom: 0.75em;
+        }
+    }
+        .slick-track{
+            display: flex;
+        }
+    .slider-caption{
+       
         padding-top: 1.5em;
-        @media(max-width: 900px){
-            margin-bottom: 4em;
+        padding-bottom: 2em;
+        
+        max-width: calc(29.9em + 30px);
+        position: relative;
+        
+        margin: 0 auto;
+        margin-bottom: 3.8em;
+        &::before{
+            content: '';
+            width: 29.9em;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            height: 1px;
+            background: #CFD9E0;
+            position: absolute;
+        }
+        p{
+            max-width: calc(29.9em / .9 + 30px);
+    margin: 0 auto;
+    padding: 0 15px;
         }
         @media(max-width: 600px){
             margin-bottom: 0;

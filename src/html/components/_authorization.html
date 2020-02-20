@@ -1,62 +1,83 @@
-<div class="authorization flex">
+<div class="authorization flex registration">
     <div class="auth-container">
-        <div class="logo">
+        <a class="logo" href="/">
             <img src="./img/pics/eps-white.svg" alt="" />
-        </div>
+        </a>
         <div class="description">
             <p class="font-14th">Registering to this website, you accept our 
-                <span>Terms of Use</span> and our 
-                <span>Privacy Policy</span></p>
+                <a href="#">Terms of Use</a href="#"> and our 
+                <a href="#">Privacy Policy</a></p>
         </div>
         <div class="sing">
             <div class="sing-caption">
-                <p class="font-30b">Sign up</p>
+                <p class="font-30b">Sign in</p>
             </div>
             <div class="sing-description">
                 <p class="font-14th">with your social network</p>
             </div>
             <div class="button-wrap flex">
-                <div class="social-button google flex">
+                <button class="social-button google flex">
                     <img src="./img/pics/google.svg" alt="" />
                     <span class="font-12b">google</span>
-                </div>
-                <div class="social-button fb flex">
+                </button>
+                <button class="social-button fb flex">
                     <img src="./img/pics/facebook.svg" alt="" />
                     <span class="font-12b">Facebook</span>
-                </div>
-                <div class="social-button twitter flex">
+                </button>
+                <button class="social-button twitter flex">
                     <img src="./img/pics/twitter.svg" alt="" />
                     <span class="font-12b">Twitter</span>
-                </div>
+                </button>
             </div>
             <div class="or flex">
                 <div class="separator"></div>
                 <p class="font-14th or-block">or</p>
                 <div class="separator"></div>
             </div>
-            <form name="" action="">
-                <div class="input-wrap">
-                    <input type="text" name="name" class="input font-14r" placeholder="Username" />
+            <form action="#">
+                <div class="input-wrap input-item">
+                    <input type="text" name="login" id="login" class="input font-14r reqiered-field" />
+                    <label for="login" class="placeholder font-14r">
+                        <span>Username or Email</span>
+                    </label>
+                    <a href="javascript:void(0);" class="reset-input close"></a>
                 </div>
-                <div class="input-wrap">
-                    <input type="email" name="email" class="input font-14r" placeholder="Email" />
-                </div>
-                <div class="input-wrap">
-                    <input type="password" name="password" class="input font-14r" placeholder="Password" />
-                </div>
-                <div class="about-pass">
-                    <p class="font-13r">Your password must be at least 6 characters long and must contain letters, numbers and special characters. Cannot contain whitespace.</p>
+                <div class="input-wrap  input-item">
+                    <input type="password" name="password" id="password" class="input font-14r reqiered-field" />
+                    <label for="password" class="placeholder font-14r">
+                        <span>Password</span>
+                    </label>
+                    
+                    <a href="javascript:void(0);" class="reset-input close"></a>
                 </div>
                 <div class="checkbox flex">
-                    <input type="checkbox" id="subscribe" class="input-checkbox" />
-                    <label for="subscribe"></label>
-                    <p class="font-13r">I wish to receive newsletters, promotions and news from ECROSystem.</p>
+                    <label for="subscribe" class="font-13r">Keep me signed in</label>
+                    <input type="checkbox" id="subscribe" class="input-checkbox" name="sinedIn" />
+                    <label for="subscribe">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="alert">
+                    <div class="icon font-13r">
+                        <span>!</span>
+                    </div>
+                    <p class="font-14r">The email address or password you entered were invalid.
+                        <br>Can we help you to 
+                        <a
+                            href="/registration.html">register</a>
+                            ?
+                        </p>
                 </div>
                 <button class="button" type="submit">
                     <span class="font-14r">Sign up</span>
                 </button>
-                <div class="already">
-                    <a href="" class="font-13r blue">Already registered? Sign in</a> 
+                <div class="link-wrap flex">
+                    <div class="already">
+                        <a href="/registration.html" class="font-13r blue">Not a member? Sign up</a>
+                    </div>
+                    <div class="already">
+                        <a href="" class="font-13r blue">I can’t remember my password</a>
+                    </div>
                 </div>
             </form>
         </div>
