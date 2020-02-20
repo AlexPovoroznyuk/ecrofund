@@ -172,20 +172,26 @@
 .quotation{
     margin-bottom: 2em;
     .container{
-        max-width: calc(58.6em - 30px);
+        /* max-width: calc(58.6em - 30px); */
     }
     .quotation-item{
-        align-items: flex-start;
-        width: 20%
+        width: calc(33.333% - .8em);
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 6px #221E1E1A;
+        padding: .8em 1.6em 1em;
+    padding-right: 1em;
     }
     .quotation-description{
-        width: 70%;
+        width: 52%;
     }
     .quotation-schedule{
-        width: 30%;
+        width: 48%;
 
     }
-    .name, .size{
+    .name{
+        margin-bottom: .7em;
+    }
+    .size{
         margin-bottom: .5em;
     }
     .balans{
@@ -195,8 +201,9 @@
     }
     .schedule{
         width: 100%;
-        padding-top: 50%;
         background: url('../img/pics/quotation-green.png') no-repeat;
+        padding-top: 35.4%;
+    background-size: cover;
     }
     .red{
         .balans{
@@ -204,8 +211,10 @@
         }
         .schedule{
             width: 100%;
-            padding-top: 50%;
+            padding-top: 35.4%;
+    
             background: url('../img/pics/quotation-red.png') no-repeat;
+            background-size: cover;
         }
     }
 }
@@ -220,14 +229,59 @@
     }
 }
 .welcome{
-    background: #0024DE;
-    margin-bottom: 2em;
+    position: relative;
+    &.container{
+        width: calc(58.1em + 30px);
+    }
+    .slick-prev{
+        left: .5em;
+    } 
+    .slick-next{
+        right: .5em;
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 0;
+        bottom: 1em;
+        margin: auto;
+        z-index: 2;
+    }
+    .slick-dots{
+        padding: 0;
+        position: absolute;
+        bottom: 1em;
+        display: flex;
+        li{
+            list-style: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin-right: 4px;
+            button{
+                display: none;
+            }
+        }
+    }
+    margin-bottom: 1.2em;
     overflow: hidden;
+    .slider-welcome{
+        width: 100%;
+        
+    }
+    .slide-welcome{
+        display: inline-block;
+        width: 100%;
+        background-image: url(../img/pics/fs-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .left-part{
-        width: 40%;
+        width: 41.5%;
         color: #fff;
-        padding-top: 5em;
-        padding-bottom: 5em;
+        padding-top: 4.6em;
+    padding-bottom: 6.5em;
     }
     .left-part-wrap{
         max-width: 15em;
@@ -242,6 +296,7 @@
         padding:  .5em 1em;
         span{
             color: #002FE0;
+            text-transform: none;
         }
         rect{
             fill: #002FE0;
@@ -251,60 +306,15 @@
             margin-left: .5em;
         }
     }
-    .right-part{
-        width: 60%;
-        justify-content: center;
-        
-    }
-    .round{
-        width: 45%;
-        padding-top: 45%;
-        border-radius: 50%;
-        position: relative;
-    }
-    .round-1{
-        width: 100%;
-        padding-top: 100%;
-        background: #fff;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        
-    }
-    .round-2{
-        width: calc(100% + 2em);
-        padding-top: calc(100% + 2em);
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        position: absolute;
-        top: -1em;
-        left: -1em;
-
-    }
-    .round-3{
-        width: calc(100% + 4em);
-        padding-top: calc(100% + 4em);
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        position: absolute;
-        top: -2em;
-        left: -2em;
-
-    }
-    .round-4{
-        width: calc(100% + 6em);
-        padding-top: calc(100% + 6em);
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        position: absolute;
-        top: -3em;
-        left: -3em;
-    }
+    
 }
 .home-product{
-    margin-bottom: 2em;
+    padding: 2.6em 0;
+    .home-product-wr{
+      padding-bottom: 2em;  
+    }
+    
+    background: #F1F3FF;
     .title-description{
         max-width: 440px;
         margin-left: auto;
@@ -339,12 +349,16 @@
     .img-wrap{
         width: 40%;
         padding-top: 40%;
-        background: blue;
-    }
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
     .logo-item{
         width: 300px;
         height: 30px;
-        background: #002FE0;
+        img{
+            height: 100%;
+        }
     }
     .slider-wrap{
         margin-bottom: 2em;
