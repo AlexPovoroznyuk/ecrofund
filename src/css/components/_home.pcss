@@ -309,9 +309,57 @@
     
 }
 .home-product{
-    padding: 2.6em 0;
+    padding: 2.6em 0 2.8em;
+    .slick-list{
+        overflow: hidden;
+        box-shadow: 0px 3px 24px #00000029;
+       
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slick-prev{
+        left: 0;
+    } 
+    .slick-next{
+        right: 0;
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 0;
+        bottom: 1em;
+        margin: auto;
+        z-index: 2;
+    }
+    .slick-dots{
+        padding: 0;
+        position: absolute;
+        bottom: -2.6em;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        li{
+            list-style: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #CFD9E0;
+            transition: .3s;
+            margin: 0 4px;
+            &.slick-active{
+                background: #2A5CFD;
+            }
+            button{
+                display: none;
+            }
+        }
+    }
     .home-product-wr{
-      padding-bottom: 2em;  
+      
+      
     }
     
     background: #F1F3FF;
@@ -322,29 +370,41 @@
         margin-top: 1em;
     }
     .product-list{
-        max-width: 990px;
-        margin: 0 auto;
+        /* max-width: 990px;
+        margin: 0 auto; */
+        padding:0 5em;
+        position: relative;
+        margin-bottom: 4.9em;
+
     }
+    
     .product-item{
         align-items: stretch;
-        box-shadow: 0px 3px 24px #00000029;
+        
+        display: flex;
+        width: 100%;
+        
     }
     .content{
         width: 60%;
         flex-direction: column;
         align-items: flex-start;
-        padding: 2em 1em;
+        padding: 2em 1.4em;
+        padding-right: 2.1em;
+        padding-top: 1.5em;
         justify-content: flex-start;
     }
     .logo{
-        margin-bottom: 1.2em;
+        margin-bottom: 1em;
     }
     .caption{
         margin-bottom: 1.2em;
+        letter-spacing: -.007em;
     }
     .link{
         margin-top: auto;
         margin-left: auto;
+        text-transform: uppercase;
     }
     .img-wrap{
         width: 39.5%;
@@ -353,9 +413,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         }
+        .products-logo{
+            justify-content: center;
+        }
     .logo-item{
-        width: 300px;
-        height: 30px;
+        height: 1.7em;
+        margin: 0 1.85em;
         img{
             height: 100%;
         }
@@ -363,11 +426,22 @@
     .slider-wrap{
         margin-bottom: 2em;
     }
+    .description{
+        line-height: 1.65;
+    }
 }
 .home-investment{
     margin-bottom: 2em;
+    padding: 4.35em 0 2.8em;
     .content-wrap{
         position: relative;
+    }
+    .description{
+        margin-bottom: 3.4em;
+    }
+    .caption{
+        margin-bottom: 1em;
+        letter-spacing: 0;
     }
     .background{
         position: absolute;
@@ -376,61 +450,104 @@
         left: 0;
         z-index: -1;
         background: #6B8EFD33;
-        padding-top: 20%;
+        padding-top: 22%;
     }
     .content{
         padding-top: 2em;
     }
     .content-item{
-        margin-bottom: 2em;
+        margin-bottom: 1.3em;
+        &:hover{
+            .link{
+                opacity: 1;
+            }
+        }
+        &:last-child{
+            margin-bottom: .2em;
+        }
+        p{
+            margin-bottom: .6em;
+        }
+
     }
+    .link{
+        transition: .3s;
+        opacity: 0;
+
+                        a{
+                           color: #2A5CFD;
+                           text-transform: uppercase; 
+                        }
+                        
+                        svg {}
+                    }
     .left-part{
         width: calc(50% - 15px);
         margin-right: 15px;
-        max-width: 540px;
+        
+        .content-item-wr{
+           max-width: 540px;
         box-shadow: 0px 3px 40px #00000029;
         border-radius: 12px;
         background: #fff;
-        padding: 1.5em;
+        padding: 1.9em 2.6em; 
+        }
     }
     .right-part{
-        width: 50%;
-        max-width: 490px;
-        margin-right: 1.5em;
+        width: calc(50% - 15px);
+       margin-left: 15px;
+        .bg{
+           max-width: 490px;
+           padding-top: 69.5%;
+        margin: auto;
+        }
         
     }
     .margin-bottom{
-        margin-bottom: 1em;
+        margin-bottom: .6em;
     }
 }
 
 .ecro-academy{
-    padding-bottom: 5em;
-    position: relative;
+     padding-bottom: 6.6em;
+    margin-bottom: 0;
+    overflow: hidden;
     .caption{
-        margin-bottom: 1.5em;
+        margin-bottom: 3em;
     }
     .content{
         position: relative;
     }
     .img-wrap{
-        width: 50%;  
+        background: #0024DE;
+        width: 49.7%;
+    padding-top: 36.4%;
     }
     .sieve{
-        width: 27%;
-        bottom: 0;
-        right: 0;
+        
+        width: 40%;
+        padding-top: 30%;
         z-index: -1;
         position: absolute;
+        right: -6.9em;
+        bottom: -7.05em;
+        img{
+            display: block;
+            width: 100%;
+        }
 
+    }
+    .description{
+        margin-bottom: 3.3em;
     }
     .description-wrap{
         max-width: 540px;
         background: #fff;
         box-shadow: 0px 3px 40px #00000029;
         border-radius: 12px;
-        padding: 1.5em 2.5em;
-        transform: translateX(-7em);
+        padding: 1.8em 2.5em 1.8em;
+        transform: translateX(-5em);
+        line-height: 1.17;
     }
     .title{
         margin-bottom: 1.6em;
@@ -441,20 +558,34 @@
 }
 
 .home-blockquote{
-    margin-bottom: 3em;
+    padding-bottom: 10.7em;
+    position: relative;
+    .blockquote-slider {
+        position: relative;
+    }
     .caption{
         text-align: center;
-        margin-bottom: 0.6em;
+        margin-bottom: 0.7em;
+        letter-spacing: 0;
     }
     .description{
         text-align: center;
         max-width: 440px;
-        margin: 0 auto 4em;
+        margin: 0 auto 3em;
+        padding: 0;
     }
     .blockquote-item{
         max-width: 1020px;
         margin: 0 auto;
-        
+        padding-top: 2em;
+    }
+    .img-wrap{
+        width: 10%;
+        height: 100px;
+        background: #0024DE;
+        margin-bottom: auto;
+        margin-right: 2.5em;
+        transform: translateY(-2em);
     }
     blockquote{
         padding-left: 5em;
@@ -472,21 +603,77 @@
         }
     }
     .author{
-        margin-top: 1.6em;
+        margin-top: 2em;
+        p{
+            margin-bottom: .2em;
+        }
+    }
+    .slick-list{
+        overflow: hidden;
+        
+       
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slick-prev{
+        left: 0;
+    } 
+    .slick-next{
+        right: 0;
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 0;
+        bottom: 1em;
+        margin: auto;
+        z-index: 2;
+    }
+    .slick-dots{
+        padding: 0;
+        position: absolute;
+        bottom: -3.3em;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        li{
+            list-style: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #CFD9E0;
+            transition: .3s;
+            margin: 0 4px;
+            &.slick-active{
+                background: #2A5CFD;
+            }
+            button{
+                display: none;
+            }
+        }
     }
 }
 .home-video{
-    margin-bottom: 3em;
+    padding-top: 4em;
+    margin-bottom: 2.8em;
     padding-bottom: 6em;
     position: relative;
+    .video-inner{
+        padding-top: 70.4%;
+        position: relative;
+    }
     .caption{
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: .6em;
+        letter-spacing: 0;
     }
     .descroption{
         max-width: 440px;
         text-align: center;
-        margin: 0 auto 2em;
+        margin: 0 auto 4.2em;
     }
     .video{
         max-width: 793px;
@@ -497,6 +684,12 @@
         width: 100%;
         background: #0024DE;
         border: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
     }
     .background{
         position: absolute;
@@ -508,7 +701,7 @@
     }
     .band{
         background: #E2E8FF80;
-        height: 50%;
+        height: 56.5%;
     }
     .video-pic{
         width: 50%;
