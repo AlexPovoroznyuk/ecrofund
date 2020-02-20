@@ -1,21 +1,27 @@
 .home{
+    .separator{
+        width: 4.5em;
+        height: 0.4em;
+        background: #CFD9E0;
+        margin-bottom: 1.5em;
+    }
     .events-caption{
         margin-bottom: 2.5em;
     }
     .see-all{
         span{
-            color: #0024DE;
+            color: #738496;
         }
         .arrow{
             width: 2em;
             height: 1px;
-            background: #0024DE;
+            background: #738496;
             position: relative;
             margin-left: .5em;
             margin-top: 2px;
             .tip{
-                border-top: 1px solid #0024DE;
-                border-right: 1px solid #0024DE;
+                border-top: 1px solid #738496;
+                border-right: 1px solid #738496;
                 width: 7px;
                 height: 7px;
                 position: absolute;
@@ -397,5 +403,134 @@
     }
     .margin-bottom{
         margin-bottom: 1em;
+    }
+}
+
+.ecro-academy{
+    margin-bottom: 3em;
+    .caption{
+        margin-bottom: 1.5em;
+    }
+    .content{
+        position: relative;
+    }
+    .img-wrap{
+        background: #0024DE;
+        width: 50%;
+        padding-top: 50%;
+    }
+    .sieve{
+        background: #0024DE;
+        width: 30%;
+        padding-top: 30%;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+
+    }
+    .description-wrap{
+        max-width: 540px;
+        background: #fff;
+        box-shadow: 0px 3px 40px #00000029;
+        border-radius: 12px;
+        padding: 1.5em 2.5em;
+        transform: translateX(-7em);
+    }
+    .title{
+        margin-bottom: 1.6em;
+    }
+    .link{
+        text-align: right;
+    }
+}
+
+.home-blockquote{
+    margin-bottom: 3em;
+    .caption{
+        text-align: center;
+        margin-bottom: 0.6em;
+    }
+    .description{
+        text-align: center;
+        max-width: 440px;
+        margin: 0 auto 4em;
+    }
+    .blockquote-item{
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    .img-wrap{
+        width: 10%;
+        height: 100px;
+        background: #0024DE;
+        margin-bottom: auto;
+    }
+    blockquote{
+        width: calc(90% - 15px);
+    }
+    .author{
+        margin-top: 1.6em;
+    }
+}
+.home-video{
+    margin-bottom: 3em;
+    padding-bottom: 6em;
+    position: relative;
+    .caption{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .descroption{
+        max-width: 440px;
+        text-align: center;
+        margin: 0 auto 2em;
+    }
+    .video{
+        max-width: 793px;
+        margin: 0 auto;
+        
+    }
+    iframe{
+        width: 100%;
+        background: #0024DE;
+        border: none;
+    }
+    .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .band{
+        background: #E2E8FF80;
+        height: 50%;
+    }
+}
+
+.home-events{
+    margin-bottom: 3em;
+    .see-all{
+        text-align: right;
+        align-self: flex-start;
+    }
+    .description{
+        max-width: 540px;
+    }
+    .title{
+        margin-bottom: 1em;
+    }
+    .event-list{
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px #00000029;
+        border-radius: 12px;
+        padding: 1.5em 2.5em;
+        transform: translateX(3em);
+        max-width: 590px;
+    }
+    .link-wrap{
+        text-align: center;
     }
 }
