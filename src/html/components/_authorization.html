@@ -1,12 +1,12 @@
 <div class="authorization flex registration">
     <div class="auth-container">
-        <div class="logo">
+        <a class="logo" href="/">
             <img src="./img/pics/eps-white.svg" alt="" />
-        </div>
+        </a>
         <div class="description">
             <p class="font-14th">Registering to this website, you accept our 
-                <span>Terms of Use</span> and our 
-                <span>Privacy Policy</span></p>
+                <a href="#">Terms of Use</a href="#"> and our 
+                <a href="#">Privacy Policy</a></p>
         </div>
         <div class="sing">
             <div class="sing-caption">
@@ -36,37 +36,47 @@
             </div>
             <form action="#">
                 <div class="input-wrap input-item">
-                    <input type="email" name="email" class="input font-14r reqiered-field" placeholder="Username or Email" />
-                    <div class="error">
-                        <span class="font-13r">
-    
-                        </span>
-                    </div>
-                    <button class="close"></button>
+                    <input type="text" name="login" id="login" class="input font-14r reqiered-field" />
+                    <label for="login" class="placeholder font-14r">
+                        <span>Username or Email</span>
+                    </label>
+                    <a href="javascript:void(0);" class="reset-input close"></a>
                 </div>
                 <div class="input-wrap  input-item">
-                    <input type="password" name="password" class="input font-14r reqiered-field" placeholder="Password" />
-                    <div class="error">
-                        <span class="font-13r">
-    
-                        </span>
-                    </div>
-                    <button class="close"></button>
+                    <input type="password" name="password" id="password" class="input font-14r reqiered-field" />
+                    <label for="password" class="placeholder font-14r">
+                        <span>Password</span>
+                    </label>
+                    
+                    <a href="javascript:void(0);" class="reset-input close"></a>
                 </div>
                 <div class="checkbox flex">
                     <label for="subscribe" class="font-13r">Keep me signed in</label>
-                    <input type="checkbox" id="subscribe" class="input-checkbox" name="sinedIn"/>
-                    <label for="subscribe"></label>
+                    <input type="checkbox" id="subscribe" class="input-checkbox" name="sinedIn" />
+                    <label for="subscribe">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="alert">
+                    <div class="icon font-13r">
+                        <span>!</span>
+                    </div>
+                    <p class="font-14r">The email address or password you entered were invalid.
+                        <br>Can we help you to 
+                        <a
+                            href="/registration.html">register</a>
+                            ?
+                        </p>
                 </div>
                 <button class="button" type="submit">
                     <span class="font-14r">Sign up</span>
                 </button>
                 <div class="link-wrap flex">
                     <div class="already">
-                        <a href="/registration.html" class="font-13r blue">Not a member? Sign up</a> 
+                        <a href="/registration.html" class="font-13r blue">Not a member? Sign up</a>
                     </div>
                     <div class="already">
-                        <a href="" class="font-13r blue">I can’t remember my password</a> 
+                        <a href="" class="font-13r blue">I can’t remember my password</a>
                     </div>
                 </div>
             </form>
