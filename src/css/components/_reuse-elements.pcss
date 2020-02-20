@@ -26,7 +26,12 @@
     font-size: 20px;
   }
 }
-
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: 600;
+}
 .font-30b {
   font-size: 1.5em;
   font-weight: 600;
@@ -35,7 +40,14 @@
     font-size: 24px;
   }
 }
+.font-24b {
+  font-size: 1.2em;
+  font-weight: 600;
 
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
 .font-20b {
   font-size: 1em;
   font-weight: 600;
@@ -243,10 +255,17 @@
 
 .blue {
   color: #0024de;
+  
+}
+.blue-2{
+  color: #2A5CFD;
 }
 
 .grey {
   color: #9ba6b2;
+}
+.gray-2{
+  color: #738496;
 }
 
 .grey-lnk-style {
