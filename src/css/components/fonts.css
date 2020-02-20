@@ -49,3 +49,15 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "Kokonor";
+    src: url("./fonts/Kokonor/Kokonor.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Kokonor/Kokonor.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("./fonts/Kokonor/Kokonor.otf") format("opentype"), /* Open Type Font */
+      url("./fonts/Kokonor/Kokonor.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/Kokonor/Kokonor") format("truetype"), /* Safari, Android, iOS */
+      url("./fonts/Kokonor/Kokonor") format("woff"), /* Modern Browsers */
+      url("./fonts/Kokonor/Kokonor.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+  }
