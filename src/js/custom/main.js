@@ -258,8 +258,8 @@ $(".slide").slick({
 $(".slider-welcome").slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_186" data-name="Group 186" transform="translate(-130 -201)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="rgba(255,255,255,0.3)" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
-	nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_187" data-name="Group 187" transform="translate(172 243) rotate(180)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="rgba(255,255,255,0.3)" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
+	prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_186" data-name="Group 186" transform="translate(-130 -201)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="#0024DE" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
+	nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_187" data-name="Group 187" transform="translate(172 243) rotate(180)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="#0024DE" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
 	dots: true
 })
 
@@ -278,6 +278,67 @@ $(".blockquote-slider").slick({
 	nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_187" data-name="Group 187" transform="translate(172 243) rotate(180)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="rgba(255,255,255,0.3)" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
 	dots: true
 })
+$(".event-list").slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_186" data-name="Group 186" transform="translate(-130 -201)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="rgba(255,255,255,0.3)" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
+	nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g id="Group_187" data-name="Group 187" transform="translate(172 243) rotate(180)"><g id="Ellipse_7" data-name="Ellipse 7" transform="translate(130 201)" fill="rgba(255,255,255,0.3)" stroke="#cfd9e0" stroke-width="1"><circle cx="21" cy="21" r="21" stroke="none"/><circle cx="21" cy="21" r="20.5" fill="none"/></g><g id="Group_17" data-name="Group 17" transform="translate(-2 9)"><rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="12" rx="1" transform="translate(155 204.515) rotate(45)" fill="#9ba6b2"/><rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="12" rx="1" transform="translate(146.515 213) rotate(-45)" fill="#9ba6b2"/></g></g></svg></button>',
+	dots: true
+})
+$('.event-list').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+	let eventBg = $('.event-list .slick-active').attr("data-src");
+	console.log(eventBg)
+	$(".home-events .img-wrap").addClass("out-animation")
+	setTimeout(function () {
+		$(".home-events .img-wrap").attr("style", `background-image:url(${eventBg});`);
+		setTimeout(function () {
+			$(".home-events .img-wrap").removeClass("out-animation")
+		}, 50)
+	}, 200)
+
+});
+
+
+$(".content-item").mouseenter(function () {
+	$(".content-item").removeClass("hover")
+	$(this).addClass("hover");
+	let parrentPos = $(".content-item-wr").offset().top;
+	let currentBullit = $(this).find(".bullit").offset().top - parrentPos;
+	let bullitBg = $(this).attr("data-src");
+
+	if (bullitBg !== $(".home-investment .bg").attr("data-current")) {
+		$(".visible-bullit").css("top", `${currentBullit}px`);
+		$(".home-investment .bg").addClass("out-animation")
+		setTimeout(function () {
+			$(".home-investment .bg").attr("style", `background-image:url(${bullitBg});`)
+			$(".home-investment .bg").attr("data-current", bullitBg)
+			setTimeout(function () {
+				$(".home-investment .bg").removeClass("out-animation")
+			}, 50)
+		}, 200)
+	}
+
+
+})
+
+$(".timeline").slick({
+	slidesToShow: 3,
+	arrows: false,
+	responsive: [{
+			breakpoint: 780,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+})
+
 
 $(".input-wrap .close").click(function () {
 	if ($(this).closest(".input-wrap").find("input").val().length) {
@@ -314,20 +375,31 @@ $("[data-name='password']").keyup(function () {
 			$(".password-validation").addClass((passwordMessages[counter]).toLowerCase());
 			$(".password-validation span").html(passwordMessages[counter])
 		}
-		
+
 	}
 
 })
 
-$(".show-pass").click(function(){
+$(".show-pass").click(function () {
 	var passwordInput = $(this).closest(".input-item").find("input");
-	if(passwordInput.attr("type") == "text"){
+	if (passwordInput.attr("type") == "text") {
 		passwordInput.attr("type", "password");
 		$(this).removeClass("show")
+	} else {
+		passwordInput.attr("type", "text");
+		$(this).addClass("show")
 	}
-	else{
-	passwordInput.attr("type", "text");	
-	$(this).addClass("show")
-	}
-	
+
+})
+
+$(".bg").click(function () {
+	let video = $("#video");
+	let src = video.attr('src')
+	$(".video-inner").addClass("played");
+	video.attr('src', `${src}?rel=0&showinfo=0&autoplay=1`)
+	console.log()
+	// console.log(video)
+	// // console.log(video.getElementById("player"))
+	// console.log(video.getElementsByClassName("ytp-large-play-button")[0])
+	// video.getElementsByClassName("ytp-large-play-button").click();
 })

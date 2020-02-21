@@ -31,5 +31,6 @@ Main style file
 @import "./components/_authorization.pcss";
 
 @import "./components/_marketplace.pcss";
+@import "./components/_timeline-block.pcss";
 
 
