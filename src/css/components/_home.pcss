@@ -6,6 +6,9 @@
         &+.subscribe-container{
             padding-top: 0;
         }
+        @media(max-width:992px){
+            padding-bottom: 2em;
+        }
     }
     .separator{
         width: 4.5em;
@@ -117,6 +120,9 @@
         }
     }
     .press{
+        .press-item{
+            margin-bottom: 1.5em;
+        }
         .events-caption{
             margin-bottom: 3.85em;
         }
@@ -141,6 +147,7 @@
         margin-bottom: 2em;
         align-items: flex-start;
         max-width: 60em;
+        flex-wrap: wrap;
     }
     .info{
         color: #9BA6B2;
@@ -197,7 +204,9 @@
 .quotation{
     margin-bottom: 2em;
     .container{
-        /* max-width: calc(58.6em - 30px); */
+        @media(max-width: 650px){
+            flex-direction: column;
+        }
     }
     .quotation-item{
         width: calc(33.333% - .8em);
@@ -205,13 +214,26 @@
         box-shadow: 0px 0px 6px #221E1E1A;
         padding: .8em 1.6em 1em;
     padding-right: 1em;
+    @media(max-width: 992px) and (min-width: 650px){
+        flex-direction: column-reverse;
+    }
+    @media(max-width: 650px){
+        width: 100%;
+        margin-bottom: 1em;
+    }
     }
     .quotation-description{
         width: 52%;
+        @media(max-width: 992px) and (min-width: 650px){
+            width: 100%;
+        }
     }
     .quotation-schedule{
         width: 48%;
-
+        @media(max-width: 992px) and (min-width: 650px){
+            width: 100%;
+            margin-bottom: 1em;
+        }
     }
     .name{
         margin-bottom: .7em;
@@ -257,6 +279,7 @@
     position: relative;
     &.container{
         width: calc(58.1em + 30px);
+        padding: 0;
     }
     .slick-prev{
         left: .5em;
@@ -275,7 +298,12 @@
         padding: 0;
         position: absolute;
         bottom: 1em;
+        left: .5em;
         display: flex;
+        @media(max-width: 992px){
+            right: .5em;
+            justify-content: center;
+        }
         li{
             list-style: none;
             width: 9px;
@@ -301,16 +329,32 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        @media(max-width: 992px){
+background: #0024DE;
+text-align: center;
+        }
     }
     .left-part{
         width: 41.5%;
         color: #fff;
         padding-top: 4.6em;
     padding-bottom: 6.5em;
+    @media(max-width: 992px){
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+        width: 100%;
+        padding-top: 2.6em;
+        padding-bottom: 3.5em;
+        .left-part-wrap{
+            max-width: 15em;
+            margin: 0 auto;
+        }
+    }
     }
     .left-part-wrap{
         max-width: 15em;
         margin-left: auto;
+        
     }
     .welcome-description{
         margin-bottom: 2em;
@@ -319,6 +363,9 @@
         width: auto;
         background: #fff;
         padding:  .5em 1em;
+        @media(max-width: 992px){
+            margin: 0 auto;
+                    }
         span{
             color: #002FE0;
             text-transform: none;
@@ -355,6 +402,9 @@
         bottom: 1em;
         margin: auto;
         z-index: 2;
+        @media(max-width: 992px){
+           display: none!important;
+        }
     }
     .slick-dots{
         padding: 0;
@@ -400,7 +450,12 @@
         padding:0 5em;
         position: relative;
         margin-bottom: 4.9em;
-
+        @media(max-width: 992px){
+            padding: 0 3em;
+        }
+        @media(max-width: 992px){
+            padding: 0;
+        }
     }
     
     .product-item{
@@ -408,7 +463,9 @@
         
         display: flex;
         width: 100%;
-        
+        @media(max-width: 992px){
+            flex-direction: column;
+        }
     }
     .content{
         width: 60%;
@@ -418,6 +475,9 @@
         padding-right: 2.1em;
         padding-top: 1.5em;
         justify-content: flex-start;
+        @media(max-width: 992px){
+            width: 100%;
+        }
     }
     .logo{
         margin-bottom: 1em;
@@ -437,13 +497,24 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        @media(max-width: 992px){
+            width: 100%;
+            padding-top: 100%;
+        }
         }
         .products-logo{
             justify-content: center;
+            @media(max-width: 992px){
+                flex-direction: column;
+            }
         }
     .logo-item{
         height: 1.7em;
         margin: 0 1.85em;
+        @media(max-width: 992px){
+            margin-bottom: 1em;
+            
+        }
         img{
             height: 100%;
         }
@@ -467,6 +538,9 @@
         top: 2.1em;
         background-color: #2A5CFD;
         transition: .3s;
+        @media(max-width: 992px){
+            display: none;
+        }
     }
     .bullit{
         width: 12px;
@@ -476,6 +550,10 @@
         left: -1em;
         top: .2em;
         opacity: 0;
+        @media(max-width: 992px){
+            opacity: 1;
+            background-color: #2A5CFD;
+        }
     }
     .content-wrap{
         position: relative;
@@ -498,6 +576,23 @@
     }
     .content{
         padding-top: 2em;
+        @media(max-width: 992px){
+            flex-direction: column-reverse;
+            .left-part,.right-part{
+                width: 100%;
+                margin: 0;
+            }
+            .content-item-wr{
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                padding: 1.9em 1em;
+                padding-left: 2.6em;
+                max-width: 100%;
+            }
+            .bg{
+                max-width: 100%;
+            }
+        }
     }
     .content-item{
         margin-bottom: 1.3em;
@@ -519,7 +614,9 @@
     .link{
         transition: .3s;
         opacity: 0;
-
+@media(max-width: 992px){
+    opacity: 1;
+}
                         a{
                            color: #2A5CFD;
                            text-transform: uppercase; 
@@ -571,6 +668,9 @@
     }
     .content{
         position: relative;
+        @media(max-width: 992px){
+            flex-direction: column;
+        }
     }
     .img-wrap{
         width: 49.7%;
@@ -578,6 +678,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
+        @media(max-width: 992px){
+            width: 100%;
+            padding-top: 100%;
+        }
     }
     .sieve{
         
@@ -590,6 +694,9 @@
         img{
             display: block;
             width: 100%;
+        }
+        @media(max-width: 992px){
+            display: none;
         }
 
     }
@@ -604,6 +711,13 @@
         padding: 1.8em 2.5em 1.8em;
         transform: translateX(-5em);
         line-height: 1.17;
+        @media(max-width: 992px){
+            transform: translateX(0);
+            padding: 1.8em 1em;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            max-width: 100%;
+        }
     }
     .title{
         margin-bottom: 1.6em;
@@ -616,6 +730,9 @@
 .home-blockquote{
     padding-bottom: 10.7em;
     position: relative;
+    @media(max-width: 992px){
+        padding-bottom: 7.7em;
+    }
     .blockquote-slider {
         position: relative;
     }
@@ -634,11 +751,18 @@
         max-width: 1020px;
         margin: 0 auto;
         padding-top: 2em;
+        @media(max-width: 992px){
+            width: 100%;
+            margin: 0;
+        }
     }
     blockquote{
         padding-left: 4.5em;
         position: relative;
-
+        @media(max-width: 992px){
+            text-align: center;
+            padding-left: 0;
+        }
         &::before{
             content: '"';
             position: absolute;
@@ -677,6 +801,9 @@
         bottom: 1em;
         margin: auto;
         z-index: 2;
+        @media(max-width: 992px){
+            display: none!important;
+        }
     }
     .slick-dots{
         padding: 0;
@@ -800,6 +927,11 @@
 
 .home-events{
     margin-bottom: 2em;
+    .event-item-wr{
+        @media(max-width: 992px){
+            flex-direction: column-reverse;
+        }
+    }
     .slick-list{
         overflow: hidden;
         
@@ -820,6 +952,9 @@
         bottom: 0;
         margin: auto;
         z-index: 2;
+        @media(max-width: 992px){
+            display: none!important;
+        }
         svg{
             box-shadow: 0px 3px 11px #00000029;
     border-radius: 50%;
@@ -858,6 +993,10 @@
     }
     &>.events-caption{
         margin-bottom: 1.9em;
+        @media(max-width: 992px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     .see-all{
         text-align: right;
@@ -884,6 +1023,11 @@
         .slick-track{
           display: flex;  
         }
+        @media(max-width: 992px){
+            transform: translateX(0);
+        max-width: 100%;
+        width: 100%;
+        }
         
         
     }
@@ -897,19 +1041,35 @@
         &.out-animation{
             opacity: 0;
         }
+        @media(max-width: 992px){
+            width: 100%;
+            padding-top: 50%;
+        }
     }
     .event-list{
         .params{
             margin-bottom: 1.2em;
+            @media(max-width: 992px){
+                
+                justify-content: center;
+                }
         }
         .description{
             line-height: 1.65;
             margin-bottom: 2.1em;
+            @media(max-width: 992px){
+                
+            max-width: 100%;
+            }
         }
         .event-item{
             margin-bottom: 3.2em;
             background: #FFFFFF;
             padding: 1.7em 1.5em;
+            @media(max-width: 992px){
+                padding: 1.7em .5em;
+                text-align: center;
+            }
         }
     }
     .link-wrap{
@@ -933,15 +1093,23 @@
         right: 0;
         top: 0;
         margin: auto;
+        @media(max-width: 992px){
+            display: none;
+        }
     }
     .see-all{
         margin-top: 1em;
     }
     .events-caption{
         margin-bottom: 3.7em;
+        @media(max-width: 992px){
+            flex-direction: column;
+            align-items: flex-start
+        }
     }
     .news-list{
         margin: 0 -5px;
+        flex-wrap: wrap;
     }
     .news-item{
         padding: 0 5px;
