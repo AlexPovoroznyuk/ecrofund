@@ -1,25 +1,62 @@
 .blockchain{
     background-image: url('/img/pics/edc-bg.png');
     background-repeat: no-repeat;
-    background-position: 50%;
     background-size: cover; 
-    padding-bottom: 14em;
-    padding-top: 1em;
+    padding-bottom: 13.6em;
+    padding-top: 6em;
+    .header{
+        padding-top: .8em;
+        padding-bottom: .8em;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #21242B;
+        z-index: 2;
+    }
     .wallet{
         margin-left: auto;
-        margin-right: 1.3em;
+        margin-right: 2.7em;
+        p{
+            margin-right: 2em;
+            letter-spacing: -0.015em;
+        }
+    }
+    .logo{
+        a{
+            display: block;
+            height: 1.1em;
+            img{
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    button{
+        img{
+            height: 1.1em;
+            width: auto;
+            display: block;
+        }
+    }
+    .language{
+        padding-right: .7em;
     }
     .castom-button{
-        padding: 0.4em 0.8em;
+        padding: .35em .7em;
         width: auto;
         border-radius: 5px;
         margin-left: .5em;
+        span{
+            text-transform: none;
+        }
     }
     .rect-gray{
         fill: #738496;
     }
     .slash{
-        margin: 0 .5em;
+        margin: 0 .75em;
     }
     .header{
         margin-bottom: 3.5em;
@@ -28,13 +65,17 @@
         max-width: 570px;
         margin-right: auto;
         margin-left: 0;
+        .button{
+            padding: .8em 1em;
+        }
     }
 
     .caption{
-        margin-bottom: 1.5em;
+        margin-bottom: 1.4em;
+        line-height: 1.1;
     }
     .description{
-        margin-bottom: 2em;
+        margin-bottom: 2.3em;
     }
     .establish{
         width: auto;
@@ -48,10 +89,19 @@
 .blockchain-about-ecro{
     background-color: #21242B;
     position: relative;
-    padding-bottom: 3em;
-    /* background-image: url('/img/pics/Ellipse82.png'); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    padding-bottom: 6em;
+    padding-top: .5em;
+    overflow: hidden;
+    .decor-item{
+        position: absolute;
+        height: 56.4em;
+        width: 56.4em;
+        right: -17em;
+        top: -16em;
+        img{
+
+        }
+    }
     .caption{
         margin-bottom: .8em;
     }
@@ -98,12 +148,12 @@
     }
 }
 .blockchain-technology{
-    background-image: url('/img/pics/fon.png');
+    background-image: url(/img/pics/fon.png);
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover; 
-    padding-top: 16em;
-    padding-bottom: 5em;
+    background-position: 77.5% 42%;
+    background-size: 142%;
+    padding-top: 12em;
+    padding-bottom: 9.7em;
     .establish{
         width: auto;
         border-radius: 4px;
@@ -123,7 +173,7 @@
     .description{
         margin-bottom: 3em;
         p{
-            margin-bottom: calc(1em / 1.8);
+            margin-bottom: 1.4em;
             @media(max-width: 600px){
                 margin-bottom: 1em;
             }

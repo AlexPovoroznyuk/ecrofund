@@ -34,5 +34,7 @@ Main style file
 @import "./components/_blockchain.pcss";
 @import "./components/_timeline-block.pcss";
 @import "./components/_another-home.pcss";
+@import "./components/_advantages.pcss";
+@import "./components/_advantages2.pcss";
 
 

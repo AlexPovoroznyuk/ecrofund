@@ -1,0 +1,130 @@
+.platform {
+    padding: 8.2em 0 0;
+    background-color: #21242b;
+    color: #fff;
+    @media(max-width: 460px){
+        padding: 4em 0 5em;
+    }
+    &.partner-platform{
+        padding: 8.9em 0 3.3em;
+        
+        .txt-part {
+        .text {
+            margin-bottom: 4.5em;
+        }
+    }
+    }
+    .content-main {
+        max-width: calc(60.6em + 30px);
+        width: 100%;
+    }
+
+    .content {
+        padding: 0 .75em;
+    }
+
+    .txt-part {
+        max-width: 38.45em;
+        margin: 0 auto;
+        text-align: center;
+        .question {
+            margin-bottom: .8em;
+            p {
+                color: #166dd5;
+            }
+        }
+
+        .title {
+            margin-bottom: .5em;
+            h2 {
+                line-height: 1.37;
+            }
+        }
+
+        .text {
+            margin-bottom: 4.7em;
+            @media(max-width: 560px){
+                font-size: 1.1em;  
+              }
+            p {
+                line-height: 1.37;
+                color: #748494;
+                
+            }
+        }
+    }
+
+    .item-wr {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -.75em;
+    }
+
+    .item {
+        display: flex;
+        width: calc(33.3333% - 1.5em);
+        padding: 1.2em 1em 1.3em;
+        transition: .3s;
+        margin: .75em;
+        margin-bottom: 0;
+        @media(max-width: 992px){
+            width: calc(50% - 1.5em);
+            box-shadow: 0 20px 70px rgba(0, 0, 0, 0.05);
+border-radius: 7px;
+background-color: rgb(116, 132, 148, .15);
+        }
+        @media(max-width: 560px){
+            font-size: 1.1em;
+            width: calc(100% - 1.5em);
+        }
+        &:hover{
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.05);
+border-radius: 7px;
+background-color: rgb(116, 132, 148, .15);
+&:hover{
+    .link {
+        opacity: 1;
+    }
+}
+        }
+        .pic {
+            min-width: 2.5em;
+            margin-right: 1.1em;
+            img {}
+        }
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            margin-bottom: 1.8em;
+            margin-top: .8em;
+            h4 {}
+        }
+
+        .text {
+             margin-bottom: 1.4em;
+            p {
+                line-height: 1.2;
+            }
+        }
+
+        .link {
+            margin-top: auto;
+            opacity: 0;
+            transition: .3s;
+            @media(max-width: 992px){
+               opacity: 1;
+            }
+            a {
+                color: #2063fc;
+            }
+
+            span {}
+
+            svg {}
+        }
+    }
+}
