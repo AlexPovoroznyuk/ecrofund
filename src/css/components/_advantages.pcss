@@ -1,0 +1,129 @@
+.advantages {
+    padding-top: 2.7em;
+    padding-bottom: 0;
+    background-color: #21242b;
+        .container-main {}
+
+    .txt-block {
+        max-width: 39.25em;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 4.9em;
+        span {
+color: #166dd5;
+line-height: 1.67;
+        }
+        .txt{
+            @media(max-width: 768px){
+                
+                font-size: 1.2em;
+            }
+        }
+        .question{
+            margin-bottom: .8em;
+            @media(max-width: 768px){
+                
+                font-size: 1.2em;
+            }
+        }
+        .title{
+            margin-bottom: 1.2em;
+        }
+        h2 {
+
+line-height: 1.27;
+        }
+
+        p {
+color: #748494;
+
+line-height: 1.67;
+        }
+    }
+
+    .item-wr {
+        display: flex;
+        align-items: center;
+        @media(max-width: 768px){
+            flex-wrap: wrap;
+            font-size: 1.3em;
+        }
+    }
+
+    .item {
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.05);
+border-radius: 7px;
+background-color: #31394a;
+padding: 1.8em 2.2em .7em;
+width: 68%;
+min-height: 19.75em;
+@media(max-width: 768px){
+    width: 100%;
+    margin-bottom: 1.5em;
+    &:first-child, &:last-child{
+        border-radius: 7px;
+    }
+}
+&:first-child{
+    padding: 1.8em 2.2em 1.2em 2.8em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+&:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+        &.select {
+box-shadow: 0 20px 70px rgba(0, 0, 0, 0.59);
+border-radius: 7px;
+background-color: #2064ff;
+background-color: #166dd5;
+padding: 3.5em 2.3em 1.2em;
+position: relative;
+width: 63%;
+@media(max-width: 768px){
+    width: 100%;
+}
+.title {
+    
+    min-height: 4em;
+    span {
+        color: #fff;
+    }
+    
+}
+
+.text {
+    min-height: 9em;
+    p {
+        color: #fff;
+    }
+}
+        }
+
+        .pic {
+            max-width: 3.7em;
+            margin-bottom: 1.6em;
+            img {
+                display: block;
+            }
+        }
+
+        .title {
+            min-height: 4em;
+            span {
+                color: #fff;
+            }
+            
+        }
+
+        .text {
+            max-width: 14em;
+            p {
+                color: #fff;
+                line-height: 1.39;
+            }
+        }
+
+    }
+}
