@@ -36,5 +36,8 @@ Main style file
 @import "./components/_another-home.pcss";
 @import "./components/_advantages.pcss";
 @import "./components/_advantages2.pcss";
-
+@import "./components/_ecro-academy1.pcss";
+@import "./components/_ecro-academy2.pcss";
+@import "./components/_academy-comunity.pcss";
+@import "./components/_academy-graph.pcss";
 
