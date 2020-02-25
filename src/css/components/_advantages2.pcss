@@ -76,6 +76,8 @@ background-color: rgb(116, 132, 148, .15);
         @media(max-width: 560px){
             font-size: 1.1em;
             width: calc(100% - 1.5em);
+            flex-direction: column;
+            text-align: center;
         }
         &:hover{
 box-shadow: 0 20px 70px rgba(0, 0, 0, 0.05);
@@ -90,6 +92,10 @@ background-color: rgb(116, 132, 148, .15);
         .pic {
             min-width: 2.5em;
             margin-right: 1.1em;
+            @media(max-width: 560px){
+                width: 2.5em;
+                margin: auto;
+            }
             img {}
         }
 

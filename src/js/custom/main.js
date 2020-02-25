@@ -397,9 +397,14 @@ $(".bg").click(function () {
 	let src = video.attr('src')
 	$(".video-inner").addClass("played");
 	video.attr('src', `${src}?rel=0&showinfo=0&autoplay=1`)
-	console.log()
-	// console.log(video)
-	// // console.log(video.getElementById("player"))
-	// console.log(video.getElementsByClassName("ytp-large-play-button")[0])
-	// video.getElementsByClassName("ytp-large-play-button").click();
+
 })
+
+$(document).ready(function() {
+	$(".scroll-trigger").click(function() {
+	  jQuery("html:not(:animated),body:not(:animated)").animate({
+		scrollTop: 0
+	  }, 800);
+	  return false;
+	});
+  });
