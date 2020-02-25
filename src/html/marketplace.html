@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    @@include('./components/_head.html',{
+        "headTitle" : "ECRO Academy",
+        "headDescription" : "ECRO Academy"
+    })
+    <body>
+        @@include('./components/_header.html', {
+            "homelink" : ""
+        })
+        <main>
+            @@include('./components/_marketplace-fs.html')
+            @@include('./components/_marketplace-video.html')
+            @@include('./components/_marketplace-advantages.html')
+            @@include('./components/_marketplace-profit.html')
+            @@include('./components/_marketplace-instruction.html')
+            @@include('./components/_marketplace-ofers.html')
+            <section class="motivation marketplace-motivation">
+                <div class="container">
+                    <p class="font-48b motivation-text">
+                        Станьте участником ECRO сегодня, чтобы получить лучшие инструменты для развития вашего бизнеса, неограниченный выбор товаров и возможность совершать безопасные сделки!
+                    </p>
+                </div>
+            </section>
+        </main>
+        @@include('./components/_scripts.html')
+    </body>
+</html>
