@@ -9,6 +9,7 @@
 .line-1-27 {
   line-height: 1.27;
 }
+
 .font-48b {
   font-size: 2.4em;
   font-weight: 600;
@@ -25,6 +26,7 @@
     font-size: 20px;
   }
 }
+
 .font-36b {
   font-size: 1.8em;
   font-weight: 600;
@@ -41,6 +43,7 @@
     font-size: 20px;
   }
 }
+
 .font-30b {
   font-size: 1.5em;
   font-weight: 600;
@@ -57,12 +60,15 @@
     font-size: 20px;
   }
 }
+
 .center {
   text-align: center;
 }
+
 .bold {
   font-weight: 600;
 }
+
 .font-30b {
   font-size: 1.5em;
   font-weight: 600;
@@ -71,10 +77,12 @@
     font-size: 24px;
   }
 }
-.font-24r{
+
+.font-24r {
   font-size: 1.2em;
   font-weight: 400;
 }
+
 .font-24b {
   font-size: 1.2em;
   font-weight: 600;
@@ -83,6 +91,7 @@
     font-size: 18px;
   }
 }
+
 .font-20b {
   font-size: 1em;
   font-weight: 600;
@@ -109,6 +118,7 @@
     font-size: 16px;
   }
 }
+
 .font-16r {
   font-weight: 400;
   font-size: 0.8em;
@@ -117,6 +127,7 @@
     font-size: 16px;
   }
 }
+
 .font-15b {
   font-weight: 600;
   font-size: 0.75em;
@@ -299,19 +310,25 @@
 
 .blue {
   color: #0024de;
-  
+
 }
-.white{
+.blue-3{
+  color: #0760E8;
+}
+
+.white {
   color: #fff;
 }
-.blue-2{
+
+.blue-2 {
   color: #2A5CFD;
 }
 
 .grey {
   color: #9ba6b2;
 }
-.gray-2{
+
+.gray-2 {
   color: #738496;
 }
 
@@ -369,13 +386,72 @@
     }
   }
 }
-.overflow-wrapper{
+
+.overflow-wrapper {
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+  .background-ellipse {
+    background-image: url(/img/pics/Ellipse82.png);
+    background-position: 50% 96%;
+    width: 82%;
+    padding-top: 100%;
+    bottom: 7em;
+    left: 8em;
+    z-index: 2;
+  }
+  .background-rect {
+    background-image: url(/img/pics/rect.png);
+    width: 82%;
+    padding-top: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-position: bottom;
+    
+  }
+
+  .background-ellipse,
+  .background-rect {
+    
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        position: absolute;
+  }
 }
-.violet{
+.decor-img-wr{
+  @media(max-width: 992px){
+    display: none;
+  }
+  .decor-img{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    .decor-img1{
+        width: 8.3em;
+        height: 8.3em;
+        background-image: url(../img/pics/preview1.png);
+    }
+    
+    .decor-img2{
+      width: 6em;
+        height: 6em;
+        background-image: url(../img/pics/our-products.png);
+    }
+    .decor-img3{
+      width: 6em;
+      height: 6em;
+      background-image: url(../img/pics/benefit-img-2.png);
+  }
+  
+
+}
+.violet {
   color: #802cff;
 }
+
 .hidden-lnk {
   position: absolute;
   top: 0;
@@ -555,25 +631,29 @@ div.input-item {
     }
   }
 }
-.input-wrap{
-  .exist-login{
+
+.input-wrap {
+  .exist-login {
     &~.error {
       opacity: 1;
     }
-  &~.placeholder {
-    color: #fb5252;
-  }
-}
-  &.no-empty {
-    .exist-login{
-      &~.error {
-        opacity: 1;
-      }
+
     &~.placeholder {
       color: #fb5252;
     }
-}
-}
+  }
+
+  &.no-empty {
+    .exist-login {
+      &~.error {
+        opacity: 1;
+      }
+
+      &~.placeholder {
+        color: #fb5252;
+      }
+    }
+  }
 }
 
 .input-wrap {
@@ -615,23 +695,25 @@ div.input-item {
   }
 }
 
-.invalid{
+.invalid {
   .alert {
-display: flex;
+    display: flex;
   }
 }
+
 .alert {
   padding: 1em 3em 1em 3em;
   background-color: #fb5252;
   margin-bottom: 1em;
   color: #fff;
-  
-    width: 100%;
-    display: none;
+
+  width: 100%;
+  display: none;
   border-radius: 4px;
   position: relative;
   justify-content: center;
   animation: zoomIn .3s linear;
+
   .icon {
     position: absolute;
     left: 15px;
@@ -645,6 +727,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
+
     span {
       color: #fff;
       line-height: .8;
@@ -654,6 +737,7 @@ display: flex;
 
   p {
     line-height: 1.37;
+
     a {
       color: #fff;
       text-decoration: underline;
@@ -662,20 +746,21 @@ display: flex;
 }
 
 @keyframes zoomIn {
-	0% {
-		-webkit-transform: scale(.8);
-		-moz-transform: scale(.8);
-		-ms-transform: scale(.8);
-		-o-transform: scale(.8);
-		transform: scale(.8)
-	}
-	to {
-		-webkit-transform: scale(1);
-		-moz-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1)
-	}
+  0% {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8)
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 /* .slick-list{
