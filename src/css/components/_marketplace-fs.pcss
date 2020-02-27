@@ -204,6 +204,11 @@
               color: #fff;
           }
         }
+        .pic{
+          path{
+            fill: #fff;
+          }
+        }
       }
 
       .pic {
@@ -214,6 +219,12 @@
           }
           img {
               display: block;
+          }
+          svg{
+            path{
+              fill: #F23F44;
+            }
+            
           }
       }
 
@@ -256,8 +267,17 @@
     margin-bottom: 3em;
   }
   .content-item{
-    max-width: 500px;
     margin-bottom: 4em;
+  }
+  .item-image{
+    max-width: 137px;
+    width: 100%;
+
+  }
+  .item-text{
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: 2em;
   }
   .item-caption{
     color: #221E1E;
@@ -278,6 +298,9 @@
 
 
 .instruction{
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
   .establish{
     width: auto;
     border-radius: 4px;
@@ -297,6 +320,18 @@
   }
   .description{
     margin-bottom: 2em;
+  }
+  .img-decor{
+    background-image: url('../img/pics/instruction.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 65%;
+    padding-top: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -321,7 +356,7 @@
       align-items: stretch;
   }
   .skills-item{
-      padding: 8em 1.5em 3em;
+      padding: 1.5em 1.5em 3em;
       border: 1px solid #CFD9E0;
       border-radius: 4px;
       width: 30%;
@@ -339,6 +374,13 @@
   .item-description{
     margin-bottom: 1em;
   }
+  .img-wrap{
+    height: 4.7em;
+    margin-bottom: 1em;
+    img{
+      width: auto;
+    }
+  }
   .link{
     margin-top: auto;
     span{
@@ -348,5 +390,27 @@
     rect{
       fill: #F23F44;
     }
+  }
+}
+
+
+.marketplace-interface{
+  .text-part{
+    width: calc(27.8em + 15px);
+    padding-left: 15px;
+    max-width: 100%;
+    margin-left: auto;
+  }
+  .title{
+    margin-bottom: 1em;
+  }
+  .caption{
+    margin-bottom: 1em;
+  }
+  .img-part{
+    width: 50%;
+  }
+  .interface-item{
+    margin-bottom: 2em;
   }
 }
