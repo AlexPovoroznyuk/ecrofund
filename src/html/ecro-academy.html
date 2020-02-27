@@ -17,14 +17,21 @@
             @@include('./components/_another-home-transfer.html')
             @@include('./components/_academy-comunity.html')
             @@include('./components/_another-home-skills.html')
-            @@include('./components/_academy-block2.html')
-            <section class="motivation academy-motivation">
-                <div class="container">
-                    <p class="font-36b white motivation-text">
-                        Присоединяйтесь к платформе <br>ECRO Academy
-                    </p>
+            
+            <div class="overflow-wrapper blockchain-wr">
+                <div class="background-ellipse">
+                    
                 </div>
-            </section>
+                <div class="background-rect">
+                    
+                </div>
+                @@include('./components/_academy-block2.html')
+                @@include('./components/_product-footer.html',{
+                    "head" : "Станьте участником ECRO сегодня, чтобы получить лучшие<br> инструменты для развития вашего бизнеса,<br> неограниченный выбор товаров и возможность совершать <br>безопасные сделки!",
+                    "button-txt" : "Бесплатно установить приложение",
+                    "custom-class" : "academy-footer"
+                })
+            </div>
         </main>
         @@include('./components/_scripts.html')
     </body>

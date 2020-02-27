@@ -5,24 +5,39 @@
         "headDescription" : "ECRO Academy"
     })
     <body>
-        @@include('./components/_header.html', {
+        <!-- @@include('./components/_header.html', {
             "homelink" : ""
-        })
+        }) -->
         <main>
             @@include('./components/_marketplace-fs.html')
-            @@include('./components/_marketplace-video.html')
-            @@include('./components/_marketplace-advantages.html')
+            <div class="overflow-wrapper marketplace-wr">
+                <div class="background-ellipse">
+                    
+                </div>
+                <div class="background-rect">
+                    
+                </div>
+                @@include('./components/_marketplace-video.html')
+                @@include('./components/_marketplace-advantages.html')
+            </div>
+            <div class="overflow-wrapper marketplace-wr profit-wr">
+                <div class="background-ellipse">
+                    
+                </div>
             @@include('./components/_marketplace-profit.html')
             @@include('./components/_marketplace-instruction.html')
+            </div>
             @@include('./components/_marketplace-ofers.html')
-            @@include('./components/_marketplace-interface.html')
-            <section class="motivation marketplace-motivation">
-                <div class="container">
-                    <p class="font-48b motivation-text">
-                        Станьте участником ECRO сегодня, чтобы получить лучшие инструменты для развития вашего бизнеса, неограниченный выбор товаров и возможность совершать безопасные сделки!
-                    </p>
-                </div>
-            </section>
+            
+            <div class="overflow-wrapper marketplace-wr">
+                
+                @@include('./components/_marketplace-interface.html')
+                @@include('./components/_product-footer.html',{
+                    "head" : "Станьте участником ECRO сегодня, чтобы получить лучшие<br> инструменты для развития вашего бизнеса,<br> неограниченный выбор товаров и возможность совершать <br>безопасные сделки!",
+                    "button-txt" : "Зарегестрироваться бесплатно",
+                    "custom-class" : "marketplace-footer"
+                })
+            </div>
         </main>
         @@include('./components/_scripts.html')
     </body>

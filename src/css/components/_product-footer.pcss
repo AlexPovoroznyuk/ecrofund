@@ -1,0 +1,86 @@
+.product-footer {
+    background-image: url(../img/pics/background_dark.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.academy-footer{
+        .establish {
+            background: #802cff;
+        }
+    }
+    &.marketplace-footer {
+        background-image: url(../img/pics/market-background.png); 
+        background-color: transparent;
+        .establish {
+            background: #F23F44;
+        }
+        .motivation-text {
+            color: #221E1E;
+        }
+    }
+    .container {
+        width: calc(58.6em + 30px);
+    }
+
+    .motivation-text {
+        text-align: center;
+        max-width: 40em;
+        margin: auto;
+        margin-bottom: 1.9em;
+        @media(max-width: 620px){
+            br{
+                display: none;
+            }
+        }
+    }
+
+    .establish {
+        margin: auto;
+        span {}
+    }
+
+    .bottom-part {
+        margin-top: 9em;
+    }
+
+    .container {}
+
+    .socials {
+        align-items: center;
+        li {
+            margin-right: .5em;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 1.1em;
+            &:hover{
+                path,
+            ellipse,
+            rect {
+                fill: #0760E8;
+            }
+            }
+        }
+
+        svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            path,
+            ellipse,
+            rect {
+                transition: .3s;
+            }
+        }
+
+    }
+
+    .copyright {
+        p {
+            color: #738496;
+        }
+    }
+}
