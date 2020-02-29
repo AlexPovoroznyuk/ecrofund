@@ -15,6 +15,7 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+        padding: 0 10px;
     }
     .image-container{
         position: relative;
@@ -39,8 +40,23 @@
       }
   .item-caption {
       margin-bottom: .4em;
+      min-height: 2.2em;
+      p{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
   }
   .item-description {
       margin-bottom: .3em;
+      min-height: 2.8em;
+      p{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-height: 1.62;
+      }
   }
 }

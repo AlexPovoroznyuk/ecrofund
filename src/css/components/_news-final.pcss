@@ -5,13 +5,75 @@
     padding-top: 3.7em;
     margin: 0 auto;
     color: #221E1E;
-    .news-final-container{
-        max-width: 29.9em;
-        margin: 0 auto ;
+    .news-final-cont{
         padding-bottom: 4.8em;
         @media(max-width: 600px){
             margin-bottom: 1em;
         }
+        div{
+            &+div{
+                font-size: .65em;
+                color: #9BA6B2;
+                max-width: calc(29.9em / .65);
+                margin: 0 auto;
+                margin-bottom: calc(2.4em / .65)
+            }
+        }
+        pre{
+            max-width: calc(29.9em / .75);
+            margin: 0 auto ;
+            font-weight: 400;
+            font-size: .75em;
+            width: 100%;
+            margin-bottom: calc(1.2em / .75);
+            font-family: HelveticaNeue;
+            white-space: normal;
+        }
+        ul{
+            max-width: 29.9em;
+            padding: 0;
+            margin:1em auto;
+            margin-top: 1em;
+            width: 100%;
+            
+            li{
+                list-style: none;
+                font-size: .75em;
+                margin-bottom: .6em;
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+        h4{
+            max-width: 29.9em;
+            margin: 0 auto ;
+            font-weight: 500;
+            font-size: 1em;
+            width: 100%;
+            margin-bottom: .5em;
+            margin-top: 1em;
+        }
+        a{
+            color: #0024de;
+    transition: .3s;
+    font-weight: 400;
+    font-size: .75em;
+    &:hover{
+        color: #221e1e;
+    }
+        }
+        pre{
+            a{
+                font-size: 1em;
+            }
+        }
+    }
+    img{
+        display: block;
+        width:100%!important;
+        margin-bottom: .7em;
+        
     }
     .caption-wrap{
         max-width: 29.9em;
@@ -163,6 +225,7 @@
     
     .news-item{
         margin: 0 5.25em;
+        padding: 0;
         @media(max-width: 1200px){
             margin: 0 2.25em;
         }

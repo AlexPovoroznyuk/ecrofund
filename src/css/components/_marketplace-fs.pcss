@@ -96,12 +96,19 @@ button{
     background-position: right;
     background-repeat: no-repeat;
     pointer-events: none;
+    @media(max-width:820px){
+        display: none;
+    }
   }
   .imag-wrap{
     margin-right: auto;
     margin-left: auto;
     max-width: 28em;
     position: relative;
+    @media(max-width: 992px){
+      
+
+    }
     img{
       width: 100%;
     }
@@ -112,19 +119,56 @@ button{
       margin-left: 0;
       align-self: flex-start;
     padding-top: 3em;
+    @media(max-width: 992px){
+      width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    }
+    @media(max-width: 567px){
+      text-align: left;
+    }
+  }
+  .container{
+    .flex{
+    @media(max-width: 992px){
+      flex-direction: column;
+     
+
+    }
+  }
   }
   
   .caption{
       margin-bottom: 1.8em;
       line-height: 1.1;
+      @media(max-width:460px){
+        br{
+          display: none;
+        }
+        
+    }
   }
   .description{
     margin-bottom: 2.65em;
+    @media(max-width:460px){
+      br{
+        display: none;
+      }
+      
+  }
   }
   .establish{
       width: auto;
       border-radius: 4px;
       background: #F23F44;
+      @media(max-width: 992px){
+        margin: auto;
+  
+      }
+      @media(max-width: 567px){
+        margin: 0;
+      }
       span{
           text-transform: none;
       }
@@ -147,9 +191,21 @@ button{
   }
   .caption{
       margin-bottom: .8em;
+      @media(max-width: 567px){
+        h2{
+          text-align: left;
+        }
+        
+      }
   }
   .description{
       margin-bottom: 2.5em;
+      @media(max-width: 567px){
+        p{
+          text-align: left;
+        }
+        
+      }
   }
   .video-inner{
       padding-top: 70.4%;
@@ -200,20 +256,40 @@ button{
   padding-bottom: 7.7em;
   @media(max-width: 570px){
       font-size: .7em;
+      padding-bottom: 2.7em;
   }
   .caption{
     color: #2E323B;
     margin-bottom: 1em;
+    @media(max-width: 567px){
+      h2{
+        text-align: left;
+      }
+      
+    }
   }
   .block-name{
     color: #F23F44;
     margin-bottom: 1em;
+    @media(max-width: 567px){
+      p{
+        text-align: left;
+      }
+      
+    }
   }
   .description{
     margin-bottom: 6.5em;
     max-width: 510px;
     margin-left: auto;
     margin-right: auto;
+    @media(max-width: 567px){
+      margin: 0 0 6.5em;
+      p{
+        text-align: left;
+      }
+      
+    }
   }
   .txt-block {
     max-width: 39.25em;
@@ -272,13 +348,16 @@ button{
           border-radius: 7px;
       }
     }
-    @media(max-width: 570px){
+    @media(max-width: 567px){
       padding: 1.8em 2.2em 2.7em;
     }
     &:first-child{
       padding: 1.8em 2.2em 1.2em 2.8em;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      @media(max-width: 567px){
+        padding: 1.8em 2.2em 2.7em;
+      }
     }
     &:last-child{
       border-top-left-radius: 0;
@@ -296,11 +375,18 @@ button{
           width: 100%;
           text-align: center;
         }
+        @media(max-width: 567px){
+          padding: 1.8em 2.2em 2.7em;
+            text-align: left;
+          
+          
+        }
         @media(max-width: 570px){
           padding: 1.8em 2.2em 2.7em;
         }
         .title {
           min-height: 2.7em;
+          
           span {
               color: #fff;
           }
@@ -324,6 +410,10 @@ button{
           @media(max-width: 768px){
               margin: 0 auto 1.6em;
           }
+          @media(max-width: 567px){
+            margin: 0 0 1.6em;
+            
+          }
           img {
               display: block;
           }
@@ -341,6 +431,12 @@ button{
               width: 100%;
               text-align: center;
           }
+          @media(max-width: 567px){
+            
+              text-align: left;
+            
+            
+          }
           span {
               color: #0B2139;
           }
@@ -352,6 +448,12 @@ button{
           @media(max-width: 768px){
               max-width: 100%;
               text-align: center;
+          }
+          @media(max-width: 567px){
+            
+              text-align: left;
+            
+            
           }
           p {
               color: #0B2139;
@@ -370,8 +472,16 @@ button{
   .title{
     margin-bottom: 1.1em;
   }
+  .container{
+    @media(max-width: 567px){
+      text-align: left;
+    }
+  }
   .left-part{
     width: 60%;
+    @media(max-width: 820px){
+        width: 100%;
+    }
   }
   .right-part{
     width: calc(40% - 2em);
@@ -379,6 +489,9 @@ button{
     max-width: 20em;
     position: relative;
     height: 26.4em;
+    @media(max-width: 820px){
+      display: none;
+    }
     img{
       position: absolute;
       height: 100%;
@@ -391,21 +504,45 @@ button{
   .caption{
     color: #0B2139;
     margin-bottom: 5.6em;
+    @media(max-width: 567px){
+
+      margin-bottom: 3.6em;
+
+  }
   }
   .content{
     align-items: flex-start;
+    
   }
   .content-item{
     margin-bottom: 5.6em;
     align-items: flex-start;
+    @media(max-width: 567px){
+      flex-direction: column;
+      
+      margin-bottom: 3.6em;
+      br{
+        display: none;
+        
+      }
+  }
     &:nth-child(2){
       margin-bottom: 3em;
     }
     &.button-wr{
       justify-content: flex-end;
       margin-bottom: 0;
+      @media(max-width: 567px){
+        
+    }
       .item-text{
         margin-left: 7.85em;
+        @media(max-width: 567px){
+          margin: 0;
+          .establish{
+            margin: auto;
+          }
+      }
       }
     }
   }
@@ -414,12 +551,24 @@ button{
     min-width: 6.85em;
     width: 100%;
     margin-top: .4em;
+    @media(max-width: 567px){
+      margin: 0 0 2em;
+    }
   }
   .item-text{
     max-width: 25.4em;
     width: 100%;
     margin-left: 1em;
     letter-spacing: -.008em;
+    @media(max-width: 820px){
+      max-width: 30.4em;
+  }
+  @media(max-width: 567px){
+    max-width: 30.4em;
+    width: 100%;
+    margin-left: 0;
+    
+  }
   }
   .item-caption{
     color: #221E1E;
@@ -451,6 +600,14 @@ button{
 
  
   overflow: hidden;
+  @media(max-width: 992px){
+    padding-top: 4em;
+  }
+  .container{
+    @media(max-width: 992px){
+      flex-direction: column;
+    }
+  }
   .inscription-wrap {
     position: absolute;
     pointer-events: none;
@@ -460,6 +617,9 @@ button{
     text-align: center;
     max-width: calc(100% - 2em);
     overflow: hidden;
+    @media(max-width: 992px){
+      display: none;
+    }
     .inscription {
       font-size: 10em;
       font-weight: 600;
@@ -472,6 +632,12 @@ button{
     width: auto;
     border-radius: 4px;
     background: #F23F44;
+    @media(max-width: 992px){
+      margin: auto;
+    }
+    @media(max-width: 567px){
+      margin: 0;
+    }
     span{
         text-transform: none;
     } 
@@ -480,12 +646,25 @@ button{
     width: 50%;
     position: relative;
     z-index: 1;
+    @media(max-width: 992px){
+      width: 100%;
+    }
   }
   .content{
     max-width: 29.5em;
     padding: 2.5em 2em 3.6em;
     background: #F5FBFF;
     min-height: 25em;
+    @media(max-width: 992px){
+      max-width: 100%;
+      text-align: center;
+    }
+    @media(max-width: 567px){
+      text-align: left;
+    }
+    @media(max-width: 460px){
+      padding: 2em 1em;
+    }
   }
   .caption{
     margin-bottom: 2.2em;
@@ -499,11 +678,19 @@ button{
   }
   .right-part{
     width: 50%;
+    @media(max-width: 992px){
+      width: 100%;
+    }
     img{
       height: 34.3em;
       width: auto;
       position: relative;
       left: -10.5em;
+      @media(max-width: 992px){
+        position: static;
+        height: auto;
+        width: 100%;
+      }
     }
   }
 }
@@ -514,6 +701,9 @@ button{
   
   position: relative;
   overflow: hidden;
+  @media(max-width: 992px){
+    padding-top: 6em;
+  }
   .background-ellipse{
     background-image: url(../img/pics/ellipse3.png)
   }
@@ -524,18 +714,36 @@ button{
   .title{
       margin-bottom: 1em;
       color: #F23F44;
+      @media(max-width: 567px){
+        p{
+        text-align: left;}
+      }
   }
   .caption{
       margin-bottom: 1em;
+      @media(max-width: 567px){
+        h2{
+        text-align: left;}
+      }
   }
   .description{
       max-width: 28.5em;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 6.3em;
+      @media(max-width: 992px){
+        margin-bottom: 3em;
+      }
+      @media(max-width: 567px){
+        p{
+        text-align: left;}
+      }
   }
   .skills-list{
       align-items: stretch;
+      @media(max-width: 768px){
+        flex-direction: column;
+      }
   }
   .skills-item{
       padding: 1.9em 1.5em 1.6em;
@@ -544,8 +752,16 @@ button{
       width: calc(33.333% - 1.1em);
       display: flex;
       flex-direction: column;
-      min-height: 20.5em
-
+      min-height: 20.5em;
+      @media(max-width: 768px){
+        min-height: unset;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 1.5em;
+      }
+      @media(max-width: 567px){
+        text-align: left;
+      }
   }
   .item-image{
       margin-bottom: 1.2em;
@@ -566,6 +782,12 @@ button{
   }
   .link{
     margin-top: auto;
+    @media(max-width: 768px){
+      justify-content: center;
+    }
+    @media(max-width: 567px){
+      justify-content: flex-start;
+    }
     span{
       color: #F23F44;
       margin-right: 5px;
@@ -582,6 +804,11 @@ button{
   padding-bottom: 6.4em;
   position: relative;
   overflow: hidden;
+  @media(max-width: 992px){
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
   .background-ellipse-empty{
     left: auto;
     right: -19em;
@@ -593,6 +820,15 @@ button{
     width: 27.8em;
     max-width: 100%;
     padding-top: 5.4em;
+    @media(max-width: 992px){
+      width:100%;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    @media(max-width: 567px){
+      
+      text-align: left;}
+    
   }
   .title{
     margin-bottom: 1em;
@@ -602,6 +838,13 @@ button{
   }
   .img-part{
     width: 52.5%;
+    @media(max-width: 992px){
+      width:100%;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
     img{
       width: auto;
     height: 27.6em;
@@ -615,14 +858,30 @@ button{
   .interface-item{
     margin-bottom: 2.3em;
     align-items: flex-start;
+    @media(max-width: 992px){
+      flex-direction: column;
+      br{
+        display: none;
+      }
+    }
     &.interface-item2{
       align-items: center;
+      @media(max-width: 992px){
+        flex-direction: column-reverse;
+      }
       .establish {
         margin-top: auto;
         background: #f23f44;
     }
       .img-part{
         width: 48.2%; 
+        @media(max-width: 992px){
+          width:100%;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
         img{
           width: auto;
           height: 23.8em;
@@ -637,6 +896,21 @@ button{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        @media(max-width: 992px){
+          width:100%;
+          text-align: center;
+          min-height: unset;
+          align-items: center;
+          
+          .description{
+            margin-bottom: 1.5em;
+          }
+        }
+        @media(max-width: 567px){
+          align-items: flex-start;
+          
+          text-align: left;
+        }
       }
     }
   }

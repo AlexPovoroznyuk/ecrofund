@@ -14,6 +14,9 @@
             margin: auto;
     
         }
+        @media(max-width: 567px){
+            margin: 0;
+        }
         span{
             text-transform: none;
         }
@@ -53,6 +56,11 @@ display: flex;
         width:100%;
 
     }
+    p{
+        @media(max-width: 567px){
+            text-align: left;
+        }
+    }
 }
 .caption{
     margin-bottom: 1em;
@@ -60,12 +68,22 @@ display: flex;
         width:100%;
 
     }
+    h2{
+        @media(max-width: 567px){
+            text-align: left;
+        }
+    }
 }
 .description{
     margin-bottom: 3em;
     @media(max-width: 992px){
         width:100%;
 
+    }
+    p{
+        @media(max-width: 567px){
+            text-align: left;
+        }
     }
 }
         }
