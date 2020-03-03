@@ -1,9 +1,11 @@
 <div class="news-container">
     <div class="overlay"></div>
+    <div class="top-news">
     <div class="container">
         <div class="row news-info flex">
+            <a href="" class="hidden-link"></a>
             <div class="half-col img-col">
-                <img src="img/pics/news_1.png" alt="img" />
+                <div class="image-container-inner" style="background-image: url(img/pics/news_1.png)"></div>
             </div>
             <div class="half-col txt-col">
                 <div class="caption">
@@ -33,6 +35,9 @@
                 
             </div>
         </div>
+    </div>
+</div>
+    <div class="container">
         <div class="news-list flex row">
             @@include('./_news-item.html', {
                 "img": "img/pics/news_1.png",
@@ -159,5 +164,6 @@
                 "see": "3854"
             })
         </div>
+        @@include('./_pagination.html')
     </div>
 </div>

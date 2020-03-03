@@ -89,9 +89,12 @@ line-height: 1.62;
         padding: 1.5em;
         outline: none;
         transition: .3s;
-        cursor: pointer;
+        cursor: -webkit-grab;
 
         vertical-align: top;
+        &:active{
+            cursor: -webkit-grabbing;
+        }
         &.slick-active {}
 
         .timeline-dot {

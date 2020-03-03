@@ -1,4 +1,14 @@
 .home{
+    .news-list{
+        .news-item{
+            .wrapper{
+                @media(min-width: 993px){
+                    height: 17.3em;
+                }
+                
+            }
+        }
+    }
     .bg-wrapper{
         max-width: 100%;
         overflow: hidden;
@@ -79,7 +89,8 @@
     }
     .caption{
         margin-bottom: .4em;
-        letter-spacing: 1.2px;
+        /* letter-spacing: .2px; */
+        line-height: 1.5;
     }
     .description{
         margin-bottom: 1.85em;
@@ -297,9 +308,18 @@
 }
 .welcome{
     position: relative;
-    &.container{
-        width: calc(58.1em + 30px);
-        padding: 0;
+    .arrow-conteiner{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        max-width: calc(66.1em + 30px);
+        margin: auto;
+    }
+    .container{
+        width: calc(66.1em + 30px);
+        padding: 0 4em;
     }
     .slick-prev{
         left: .5em;
@@ -312,7 +332,13 @@
         top: 0;
         bottom: 1em;
         margin: auto;
+        height: 2.1em;
         z-index: 2;
+        opacity: .5;
+        transition: .3s;
+        &:hover{
+            opacity: 1;
+        }
     }
     .slick-dots{
         padding: 0;
@@ -320,6 +346,12 @@
         bottom: 1em;
         left: .5em;
         display: flex;
+        width: calc(59.6em + 30px);
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        margin: 0 auto;
+        right: 0;
         @media(max-width: 992px){
             right: .5em;
             justify-content: center;
@@ -329,10 +361,10 @@
             width: 9px;
             height: 9px;
             border-radius: 50%;
-            border: 1px solid rgba(255,255,255,.5);
+            background:  rgba(255,255,255,.5);
             margin-right: 4px;
             &.slick-active{
-                border: 1px solid rgba(255,255,255,1);
+                background: rgba(255,255,255,1);
             }
             button{
                 display: none;
@@ -364,7 +396,7 @@ background: #0024DE;
         }
     }
     .left-part{
-        width: 41.5%;
+        /* width: 41.5%; */
         color: #fff;
         padding-top: 4.6em;
     padding-bottom: 6.5em;
@@ -383,7 +415,7 @@ background: #0024DE;
     }
     .left-part-wrap{
         max-width: 19em;
-        margin-left: auto;
+        /* margin-left: auto; */
         display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -396,13 +428,17 @@ background: #0024DE;
     .button{
         width: auto;
         background: #fff;
-        padding:  .5em 1em;
+        padding: .7em 1em;
+        &:hover{
+            box-shadow: 0 3px 7px rgba(0,0,0,.3);
+        }
         @media(max-width: 992px){
             /* margin: 0 auto; */
                     }
         span{
             color: #002FE0;
             text-transform: none;
+            line-height: .8;
         }
         rect{
             fill: #002FE0;
@@ -436,6 +472,20 @@ background: #0024DE;
         bottom: 1em;
         margin: auto;
         z-index: 2;
+        height: 2.1em;
+        circle{
+        transition: .3s;
+        }
+        &:hover{
+            circle{
+                
+                &:first-child{
+                    fill:#cfd9e0;
+                }
+                
+                
+            }
+        }
         @media(max-width: 992px){
            display: none!important;
         }
@@ -506,6 +556,7 @@ background: #0024DE;
         padding-right: 2.1em;
         padding-top: 1.5em;
         justify-content: flex-start;
+        flex-grow: 1;
         @media(max-width: 992px){
             width: 100%;
         }
@@ -549,6 +600,7 @@ background: #0024DE;
         img{
             mix-blend-mode: luminosity;
             height: 100%;
+            opacity: .5;
         }
     }
     .slider-wrap{
@@ -718,7 +770,7 @@ background: #0024DE;
     }
     .img-wrap{
         width: 49.7%;
-        padding-top: 36.4%;
+        padding-top: 49.7%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -756,6 +808,9 @@ background: #0024DE;
         padding: 1.8em 2.5em 1.8em;
         transform: translateX(-5em);
         line-height: 1.17;
+        min-height: 20em;
+        display: flex;
+        flex-direction: column;
         @media(max-width: 992px){
             transform: translateX(0);
             padding: 1.8em 1em;
@@ -768,7 +823,9 @@ background: #0024DE;
         margin-bottom: 1.6em;
     }
     .link{
+        margin-top: auto;
         text-align: right;
+        text-transform: uppercase;
     }
 }
 
@@ -847,6 +904,20 @@ background: #0024DE;
         bottom: 1em;
         margin: auto;
         z-index: 2;
+        height: 2.1em;
+        circle{
+            transition: .3s;
+            }
+            &:hover{
+                circle{
+                    
+                    &:first-child{
+                        fill:#cfd9e0;
+                    }
+                    
+                    
+                }
+            }
         @media(max-width: 992px){
             display: none!important;
         }
@@ -1000,6 +1071,20 @@ background: #0024DE;
         bottom: 0;
         margin: auto;
         z-index: 2;
+        height: 2.1em;
+        circle{
+            transition: .3s;
+            }
+            &:hover{
+                circle{
+                    
+                    &:first-child{
+                        fill:#cfd9e0;
+                    }
+                    
+                    
+                }
+            }
         @media(max-width: 992px){
             display: none!important;
         }
@@ -1070,7 +1155,6 @@ background: #0024DE;
         background-color: #fff;
         transform: translateX(2.6em);
         max-width: 29.5em;
-        margin-bottom: 1em;
         z-index: 2;
         .slick-track{
           display: flex;  
@@ -1163,6 +1247,7 @@ background: #0024DE;
         margin: 0 -15px;
         flex-wrap: wrap;
         align-items: stretch;
+        justify-content: flex-start;
     }
     .news-item{
         padding: 0 15px;

@@ -41,4 +41,6 @@ Main style file
 @import "./components/_academy-graph.pcss";
 @import "./components/_marketplace-fs.pcss";
 @import "./components/_product-footer.pcss";
+@import "./components/_pagination.pcss";
+@import "./components/_modals.pcss";
 

@@ -1,0 +1,40 @@
+.pagination-wr {
+    justify-content: center;
+    margin-top: 2em;
+    .count-wr {
+        p {
+            margin: 0 2em;
+        }
+
+
+        span {
+            margin: 0 .3em;
+        }
+    }
+
+    .pagination-button {
+        height: 2.1em;
+        svg{
+            display: block;
+            width: auto;
+            height: 100%;
+        }
+        circle{
+        transition: .3s;
+        }
+        
+        &:hover{
+            circle{
+                
+                &:first-child{
+                    fill:#cfd9e0;
+                }
+                
+                
+            }
+        }
+        .next {}
+
+        .prev {}
+    }
+}

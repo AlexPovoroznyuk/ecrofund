@@ -1,0 +1,145 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    &.thk-modal, &.err-modal{
+        .title{
+            margin-bottom: 1.5em;
+        }
+    }
+    &.active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+    .modal-overlay{
+        position: absolute;
+        top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+border: 1px solid #707070;
+opacity: 0.8;
+    }
+    .modal-inner {
+        display: flex;
+        width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    }
+
+    .modal-content {
+        background: #FFFFFF;
+border-radius: 12px;
+opacity: 1;
+padding: 3.3em;
+position: relative;
+min-width: 18em;
+    }
+
+    .close-trigger-btn {
+position: absolute;
+right: 15px;
+top: 15px;
+
+cursor: pointer;
+        div {
+            position: relative;
+            width: 15px;
+    height: 15px;
+height: 10px;
+&::after, &::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #D5D5D5;
+}
+&::after{
+transform: rotate(45deg);
+}
+ &::before{
+    transform: rotate(-45deg);
+ }
+        }
+    }
+
+    .title {
+        margin-bottom: .7em;
+        p {
+            text-align: center;
+line-height: 1.15;
+font-weight: 400;
+font-size: 1.2em;
+color: #000000;
+margin: 0;
+        }
+    }
+
+    .description {
+        margin-bottom: 2.2em;
+        padding: 0;
+        p {
+            margin: 0;
+            text-align: center;
+            line-height: 1.15;
+            font-weight: 400;
+            font-size: .7em;
+            color: #000000;
+        }
+    }
+
+    form {}
+
+    .input-wr {
+        margin-bottom: 1em;
+        input{
+            display: block;
+            width: 100%;
+            border: 1px solid #EBEBEB;
+border-radius: 4px;
+font-size: .7em;
+line-height: 46px;
+color: #D0D0D0;
+padding: 0 16px;
+font-weight: 400;
+&::placeholder{
+    font-size: 1em;
+    line-height: 48px;
+    color: #D0D0D0;
+    font-weight: 400;
+}
+        }
+    }
+
+    .button-wr {
+        button{
+            padding: .75em;
+            span{
+                font-size: .75em;
+            }
+
+    
+        }
+    }
+}

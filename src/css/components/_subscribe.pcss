@@ -1,6 +1,6 @@
 .subscribe{
     .btn-container{
-        width: 12em;
+        width: 10em;
     }
     .input-group{
         max-width: 39em;
@@ -48,6 +48,11 @@
         }
     }
     .input-group{
+        &.validation-error{
+            input{
+                color: #fb5252;
+            }
+        }
         @media(max-width: 420px){
             margin-right: 0;
             margin-bottom: 2em;
