@@ -43,4 +43,5 @@ Main style file
 @import "./components/_product-footer.pcss";
 @import "./components/_pagination.pcss";
 @import "./components/_modals.pcss";
+@import "./components/_support-final.pcss";
 
